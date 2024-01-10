@@ -1,0 +1,165 @@
+depot_id,jardin_id,depot,adresse_id,contact_id,capacite
+1,1,IUT de Saint Dié des Vosges,1,1,20
+2,1,Salle des fêtes de St Michel,2,29,20
+3,1,Salle polyvalente d'Étival Clairefontaine,3,39,20
+4,1,La Halle aux Blés,4,3,20
+5,1,Collège de Baccarat,5,20,20
+7,1,Lycée d'horticulture,7,41,20
+8,1,Emmaüs Rambervillers,8,2,20
+9,1,Four Grand-Mère,9,38,20
+10,1,Fraispertuis City,10,45,20
+11,1,Le Gaming 88,11,21,10
+12,1,Lycée Georges Baumont,12,55,20
+13,1,Nouvelle Salaison des Hautes-Vosges,13,40,20
+14,1,Brasserie de l'Abbaye,14,10,20
+15,1,Château des princes de Salm,15,48,20
+16,1,Château de Belval,16,30,20
+17,1,Boulangerie Claulin,17,46,20
+18,1,Hôtel Restaurant Julien,18,5,20
+19,1,Biscuiterie du Col de Saales,19,22,20
+20,1,CC de la Fave,20,50,20
+21,1,Association Elan,21,42,20
+22,1,Salle Multi-activités,22,9,20
+23,1,INSIC,23,27,20
+24,1,Salle Polyvalente,24,47,20
+25,1,Le Domaine des Bans,25,49,20
+26,1,Lycée Hôtellier,26,24,20
+27,1,Fromagerie Gérard,27,33,20
+28,1,Boucherie de la Place,28,,20
+29,1,AFPA Remiremont,29,4,20
+30,1,Cabaret Bellecour,30,16,20
+31,1,Le Foyer,31,26,20
+32,1,Hôpital de Bruyères,32,,20
+33,1,Restaurant les Myrtilles,33,8,20
+34,1,IFSI,34,44,20
+35,1,Mairie de Neuvillers,35,23,20
+36,1,Mairie Ban de Laveline,36,17,20
+37,1,Centre d'Animation Municipal,37,,20
+38,1,Musée des Eaux de Vie,38,31,20
+39,1,Evergreen Tomatoes,39,6,20
+40,1,Hôtel au Tilleul,40,25,20
+41,1,Office du Tourisme de Munster,41,18,20
+42,1,Centre les Jonquilles,42,43,20
+43,1,Gîte le Vic,43,19,20
+44,1,Moulin Clefcy,44,,20
+45,1,Le grenier de Papy,45,32,20
+46,1,Salle des fêtes de Saulcy,46,7,20
+47,1,Lycée professionnel Notre-Dame de la Providence,47,,20
+48,1,Foyer rural,48,36,20
+49,1,Fromagerie Gourmand’Art,49,,20
+50,1,Maison rurale Saulxures,50,,20
+51,1,Café Canton,51,12,20
+52,1,ENSTIB,52,35,20
+53,1,Assotiation AMI,53,,20
+54,1,Moustache Bikes,54,13,20
+55,1,Moulin de Nomexy,55,,20
+56,1,Maison du Livre,56,34,20
+57,1,Centre culturel,57,14,20
+58,1,Mairie de Gerbéviller,58,,20
+59,1,Mairie de Badonviller,59,28,20
+60,1,Hôtel des lacs,60,,20
+61,1,La chèvre vagabonde,61,15,20
+62,1,Resto du coeur,62,,20
+63,1,Les jardins de Callunes,63,11,20
+64,1,Mairie d'Hurbache,64,37,20
+65,2,Eglise Saint Antoine,65,,40
+66,2,Ligue de l’enseignement,66,,40
+67,2,Centre Léo Lagrange,67,,60
+68,2,APF - Local extérieur – ESAT,68,,20
+69,2,Ecodenn’ergie,69,,20
+70,2,Botanic,70,,20
+71,2,Chambre d’Agriculture,71,,20
+72,2,Pharmacie Robert,72,,20
+73,2,Association GACI,73,,80
+74,2,Office du tourisme,74,,20
+75,2,Raon aux Bois,75,,20
+76,2,Mr et Mme Boulassel,76,,20
+77,2,Jardins de Cocagne,77,,100
+78,2,Madame Pierot,78,,20
+79,2,3ème Rive Café Associatif,79,,20
+80,2,Point Vert Mafra,80,,20
+81,2,Brico Marché,81,,20
+82,2,Pro & Cie,82,,20
+83,2,M. Lecomte François,83,,20
+84,2,Maison de l'Étudiant,90,,20
+85,2,La Tête à Toto,,,20
+87,4,Maison de Quartier du Vieux-Lille,,,15
+88,4,La cave de Jules,,,15
+89,4,Traiteur Veys,,,15
+90,4,Polytech,,,15
+91,4,Boucherie François,,,15
+92,4,Un Ours et les Etoiles,,,15
+93,4,Boulangerie Picavet,,,15
+94,4,Bar Moulins d'Ascq,,,15
+95,2,Secours Catholique,,,20
+96,2,Conseil Départemental des Vosges,,,20
+97,2,Association Rhyzome,,,20
+98,2,Denninger,,,20
+99,2,Crédit Agricole Épinal,,,20
+100,2,Adinolfi,,,20
+101,2,Papeterie Golbey Norske Skog,,,10
+102,2,Vosgelis (Épinal),,,20
+103,2,Vosgelis (Remiremont),,,20
+104,2,Renouveau,,,20
+105,2,DVIS,,,20
+106,2,Maison de l'environnement,,,20
+107,2,Peridon,,,20
+108,2,Bouvier Emmanuel,,,10
+109,2,La Quarterelle,,,20
+110,2,Moustache Bikes,,,10
+111,2,Biocoop Épinal,,,20
+147,4,Boucherie Chez Florentin,,,15
+150,4,Le Panier Fleuri ,,,10
+6,1,Village du livre,6,60,20
+112,4,El Market,,,15
+114,4,CCAS de Lambersart,,,15
+113,4,La Nature a du Génie,,,15
+116,4,Boucherie Ludovic Monchy ,,,15
+115,4,Les Pieds sur Terre,,,15
+121,4,Top Fleurs ,,,15
+124,4,Allo Fleurs ,,,15
+163,4,Le Polder ,,,15
+164,4,Boucherie du Bourg ,,,15
+158,4,Artisans du Monde,,,10
+148,4,Boucherie du Bourg ,,,15
+151,4,Ethique & Vrac,,,15
+153,4,La Chouette Librairie ,,,15
+155,4,Salon Cannelle ,,,15
+157,4,Rêves de Mômes (Marquette-lez-Lille),,,15
+136,4,Biocoop Saveurs et Saisons ,,,10
+138,4,So végétal (Bondues),,,15
+117,4,Le Caméléon Gourmand ,,,15
+119,4,Harmonie Nature ,,,15
+122,4,Dépannage D. Buisine ,,,15
+126,4,La Moulinette ,,,15
+120,4,Boulangerie Aux Blés d'Or ,,,5
+118,4,Polygonum Fleuriste ,,,10
+129,4,Biocoop HemHEM,,,15
+128,4,Monsieur Vin (Lomme),,,15
+127,4,Cuvelier & Fauvarque ,,,15
+125,4,Monsieur Vin ,,,15
+123,4,Bio'tiful Nature ,,,15
+133,4,Ancolie Fleuriste ,,,15
+132,4,Boucherie-Traiteur Dierickx,,,15
+131,4,Biocoop Biovalys,,,15
+130,4,Le Relais Gourmand ,,,15
+134,4,Monsieur Vin (Mouvaux),,,15
+137,4,La Campusserie Pont de Bois,,,15
+140,4,La maison du vin ,,,15
+141,4,Boulangerie Catrisse,,,15
+143,4,Boucherie Lamandin ,,,15
+139,4,L'olivier blanc ,,,15
+135,4,La Maison Nouvelle,,,15
+149,4,Biocoop Hénin Beaumont,,,15
+144,4,L.S.I,,,15
+142,4,Boulangerie Delmeulle,,,15
+154,4,Boulangerie Aux Délices de la Comtesse ,,,10
+159,4,Au Pain d'Antan ,,,10
+162,4,Le bus magique ,,,15
+152,4,Biocoop Saveurs et Saisons Bouvines,,,15
+145,4,Fred Réception,,,15
+160,4,La Cave de Frédéric ,,,15
+146,4,Le Trèfle à Quatre Fleurs ,,,15
+161,4,Ceci n'est pas une boulangerie ,,,5
+156,4,L'Atelier Vélo L.S.I.,,,20
+86,2,Jardins de Cocagne,,,100

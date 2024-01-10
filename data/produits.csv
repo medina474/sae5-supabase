@@ -1,0 +1,25 @@
+produit_id,jardin_id,produit
+1,2,Panier simple
+2,2,Panier familial
+3,2,Boite oeuf x6
+4,2,Panier fruité 1
+5,2,Panier fruité 2
+6,2,Panier fruité 3
+7,2,Boite oeuf x12
+8,3,Panier
+9,3,Demi panier
+10,3,Panier solidaire
+11,3,Demi panier solidaire
+12,3,Panier découverte
+13,3,Demi panier découverte
+14,3,6 œufs bio
+15,5,Panier 2 personnes
+16,5,Panier 4 personnes
+17,5,Panier 6 œufs
+18,5,Panier 12 œufs
+19,4,Petit panier
+20,4,Panier standard
+21,4,Panier familial
+23,4,Petite corbeille de fruits
+24,4,Grande corbeille de fruits
+22,4,La boîte de 6 œufs

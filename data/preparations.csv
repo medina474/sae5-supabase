@@ -1,0 +1,8 @@
+preparation_id,jardin_id,preparation,ordre
+1,1,Lundi,1
+2,1,Mercredi,2
+3,2,Mardi,1
+4,2,Jeudi,2
+5,4,Lundi,1
+6,4,Jeudi,2
+7,3,Préparation,1

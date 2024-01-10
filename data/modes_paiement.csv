@@ -1,0 +1,13 @@
+mode_paiement_id,mode_paiement,nombre
+1,chèque,1
+2,chèque,2
+3,chèque,3
+4,chèque,4
+5,chèque,6
+6,chèque,12
+7,prélèvement,1
+8,prélèvement,2
+9,prélèvement,3
+10,prélèvement,4
+11,prélèvement,6
+12,prélèvement,12
