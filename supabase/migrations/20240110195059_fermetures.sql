@@ -21,7 +21,7 @@ alter table only fermetures
   add constraint fermetures_jardin_id_fkey foreign key (jardin_id) references jardins(jardin_id) on delete cascade;
 
 alter table fermetures
-  add constraint fermeture check (semaine <= 53)
+  add constraint fermeture check (semaine <= 53);
 
 create table feries (
   ferie_id bigint not null,
