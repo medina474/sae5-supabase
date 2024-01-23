@@ -1,8 +1,8 @@
 jardin_id,jardin,contact_id,tva,adresse_id
-1,SAÉ IUT Saint-Dié des Vosges,1,FR24130015506,1
-2,Jardins de Cocagne Thaon les Vosges,77,FR42400245775,51
-3,Oasis Jardin de Cocagne,84,FR65439393075,52
-4,Le Jardin de Cocagne de la Haute Borne,85,FR56775624075,53
-5,Les Jardins de Cocagne en Limousin,86,FR87400102521,54
-6,Unit testing,,FR84949849844,57
-7,Jardin de Cocagne Lozère,92,FR73538198474,59
+1,SAÉ IUT Saint-Dié des Vosges,,FR24130015506,
+2,Jardins de Cocagne Thaon les Vosges,,FR42400245775,
+3,Oasis Jardin de Cocagne,,FR65439393075,
+4,Le Jardin de Cocagne de la Haute Borne,,FR56775624075,
+5,Les Jardins de Cocagne en Limousin,,FR87400102521,
+6,Unit testing,,FR84949849844,
+7,Jardin de Cocagne Lozère,,FR73538198474,
