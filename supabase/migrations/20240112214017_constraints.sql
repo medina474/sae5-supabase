@@ -20,14 +20,6 @@ alter table "public"."contacts" add constraint "contacts_jardin_id_fkey" FOREIGN
 
 alter table "public"."contacts" validate constraint "contacts_jardin_id_fkey";
 
-alter table "public"."depots" add constraint "depots_adresse_id_fkey" FOREIGN KEY (adresse_id) REFERENCES adresses(adresse_id) not valid;
-
-alter table "public"."depots" validate constraint "depots_adresse_id_fkey";
-
-alter table "public"."depots" add constraint "depots_contact_id_fkey" FOREIGN KEY (contact_id) REFERENCES contacts(contact_id) not valid;
-
-alter table "public"."depots" validate constraint "depots_contact_id_fkey";
-
 alter table "public"."fermetures" add constraint "fermetures_saison_id_fkey" FOREIGN KEY (saison_id) REFERENCES saisons(saison_id) not valid;
 
 alter table "public"."fermetures" validate constraint "fermetures_saison_id_fkey";
@@ -51,5 +43,3 @@ alter table "public"."distributions" validate constraint "distributions_jardin_i
 alter table "public"."distributions" add constraint "distributions_tournee_id_fkey" FOREIGN KEY (tournee_id) REFERENCES tournees(tournee_id) not valid;
 
 alter table "public"."distributions" validate constraint "distributions_tournee_id_fkey";
-
-
