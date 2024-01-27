@@ -1,0 +1,14 @@
+tournee_id,jardin_id,tournee,preparation_id,calendrier_id,ordre,couleur
+1,2,Mardi,3,1,1,#ef476f
+2,2,Mardi (Jardins),3,1,2,
+3,2,Mercredi matin,3,2,3,#ffd166
+4,2,Mercredi après-midi,3,2,4,#06d6a0
+5,2,Mercredi (Ent.),3,2,5,#118ab2
+6,2,Mercredi (Jardins),3,2,6,#073b4c
+7,2,Jeudi (Salariés),4,4,1,
+8,2,Jeudi (Charmes),4,4,2,
+9,2,Vendredi (Épinal),4,3,3,
+10,2,Vendredi (Gérardmer),4,3,4,
+11,2,Vendredi (Ent.),4,3,5,
+12,2,Vendredi (Jardins),4,3,6,
+

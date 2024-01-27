@@ -14,9 +14,10 @@ call fermetures.cmd
 echo feries
 call feries.cmd
 
+echo préparations
 call preparations.cmd
 call depots.cmd
-call fournisseurs.cmd
+::call fournisseurs.cmd
 
 echo adherents
 call adherents.cmd
@@ -32,8 +33,15 @@ call produits.cmd
 echo paniers
 call paniers.cmd
 
+echo calendries
 call calendriers.cmd
+
+echo tournées
 call tournees.cmd
+
+echo distributions
 call distributions.cmd
+
+echo plannings
 call plannings.cmd
 ::call abonnements.cmd
