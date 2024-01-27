@@ -1,4 +1,4 @@
-create or replace view vw_nb_adherents_par_jardin
+create or replace view view_nb_adherents_par_jardin
 as select j.jardin_id,
     j.jardin,
     count(a.*) as nb_adherents

@@ -24,4 +24,4 @@ call calendriers.cmd
 call tournees.cmd
 call distributions.cmd
 call plannings.cmd
-call abonnements.cmd
+::call abonnements.cmd

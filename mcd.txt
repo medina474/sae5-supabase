@@ -1,0 +1,72 @@
+Jour férié: date, nom [text]
+Fermeture: semaine
+
+%
+Adresse1: id [bigint], rue [text], codepostal [text], ville [text], localisation
+Contact1: id [bigint], nom [text], email [text], téléphone [text]
+:
+Est Fermé, 0n [saison] Saison, _11 Jour férié
+Ne livre pas, 0n [saison] Saison, _11 Fermeture
+:::
+
+Localise1, 11 Jardin, 11 [adresse] Adresse1
+Gére1, 11 Jardin, 11 [contact] Contact1
+:
+DF, 1n [jardin] Jardin, 11 Saison
+Saison: id [bigint], nom, date début, date fin, en cours
+Inclut, 1n [saison] Saison, 11 [jour] Jour
+Jour: id [bigint], date
+DF, 1n [calendrier] Calendrier, 11 [jour] Jour
+:
+
+:::::
+
+Jardin: id [bigint], nom, identifiant tva
+DF, 1n [jardin] Jardin, 11 [fréquence] Fréquence
+::
+Fréquence: id [bigint], nom [text]
+Propose, 1n [fréquence] Fréquence, 0n [jour] Jour:qte
+::
+
+:::
+
+%
+DF, 0n [jardin] Jardin, 11 Produit
+Produit:id, nom
+DF, 1n [produit]  Produit, 11 [panier] Panier, 11 [frequence] Frequence
+Panier: id [bigint], nom
+:
+
+::
+Contient, 11 Abonnement, 1n [panier] Panier
+
+
+Adhésion, 1n [jardin] Jardin, 0n  [adhérent] Adhérent, 0n  [saison] Saison: date, montant
+Adhérent: id [bigint], nom, actif
+Souscrire, 1n [adhérent] Adhérent, 1n Abonnement
+Abonnement: id, nom
+
+
+DF, 1n [jardin] Jardin, 11 Préparation
+:::::
+Suit, 11 [tournée] Tournée, 1n [calendrier] Calendrier
+Calendrier: id [bigint], nom
+
+:
+
+Préparation: id [bigint], jour
+Affecter, 0n [préparation] Préparation,  11 Tournée:ordre
+:
+Tournée: id [bigint], couleur
+Distribution, 1n [tournée] Tournée, 0n [dépot] Dépôt, 1n [abonnement] Abonnement: id, ordre
+Dépôt: id [bigint], nom, capacite
+
+::::::
+Localise2, 11 Dépôt, 11 [adresse] Adresse2
+:
+Gére2, 11 Dépôt, 11 [contact] Contact2
+
+::::::
+Adresse2: id [bigint], rue [text], codepostal [text], ville [text], localisation
+:
+Contact2: id [bigint], nom [text], email [text], téléphone [text]
