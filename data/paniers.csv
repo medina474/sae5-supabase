@@ -1,8 +1,2 @@
 panier_id,produit_id,panier,frequence_id,quantite,prix
 10,10,Panier solidaire,1,50,2.50
-13,19,Petit panier,,4,40.00
-14,20,Panier standard,,4,56.00
-15,21,Panier familial,,4,72.00
-16,22,la boîte de 6 œufs,,4,10.00
-17,23,Petite corbeille de fruits,,4,20.00
-18,24,Grande corbeille de fruits,,4,40.00
