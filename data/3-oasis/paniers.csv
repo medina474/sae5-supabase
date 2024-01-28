@@ -1,2 +1,3 @@
 panier_id,produit_id,panier,frequence_id,quantite,prix
+10,10,Panier solidaire,1,50,2.50
 19,8,Panier simple,5,50,500.00

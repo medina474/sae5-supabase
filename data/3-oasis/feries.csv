@@ -1,0 +1,27 @@
+ferie_id,jardin_id,ferie,jour
+56,3,Lundi de Pâques,2022-04-18
+59,3,Ascension,2022-05-26
+60,3,Pentecôte,2022-06-06
+61,3,Fête nationale,2022-07-14
+62,3,Assomption,2022-08-15
+63,3,Toussaint,2022-11-01
+64,3,Armistice 1918,2022-11-11
+5,3,Lundi de Pâques,2023-04-10
+7,3,Victoire 1945,2023-05-08
+9,3,Pentecôte,2023-05-29
+11,3,Assomption,2023-08-15
+10,3,Fête nationale,2023-07-14
+8,3,Ascension,2023-05-18
+12,3,Toussaint,2023-11-01
+13,3,Armistice 1918,2023-11-11
+6,3,Fête du Travail,2023-05-01
+18,3,Jour de l'An,2024-01-01
+23,3,Fête du Travail,2024-05-01
+22,3,Lundi de Pâques,2024-04-01
+25,3,Ascension,2024-05-09
+24,3,Victoire 1945,2024-05-08
+28,3,Assomption,2024-08-15
+30,3,Armistice 1918,2024-11-11
+29,3,Toussaint,2024-01-01
+26,3,Pentecôte,2024-05-20
+52,3,Jour de l'An,2022-01-01
