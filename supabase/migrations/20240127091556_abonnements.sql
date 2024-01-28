@@ -12,9 +12,10 @@ alter table "public"."livraisons" validate constraint "livraisons_abonnement_id_
 
 set check_function_bodies = off;
 
-CREATE OR REPLACE PROCEDURE public.abonner(IN _adherent_id bigint, IN _panier_id bigint, IN _distribution_id bigint)
+create or replace function abonner(in _adherent_id bigint, in _panier_id bigint, in _distribution_id bigint)
+returns void
  LANGUAGE plpgsql
-AS $procedure$
+AS $function$
 declare
   _jardin_id bigint;
   _saison_id bigint;
@@ -24,17 +25,17 @@ declare
   _date_debut date;
   _date_fin date;
 begin
-  
-  select jardin_id, saison_id 
+
+  select jardin_id, saison_id
     into _jardin_id, _saison_id
-    from adhesions a 
+    from adhesions a
     where adherent_id = _adherent_id and saison_id = 5;
-  
-  select s.date_debut, s.date_fin 
+
+  select s.date_debut, s.date_fin
     into _date_debut, _date_fin
-    from saisons s 
+    from saisons s
     where saison_id = _saison_id;
-  
+
   insert into abonnements
     (adherent_id, panier_id, montant, nombre)
     select _adherent_id, _panier_id, prix, quantite from paniers where panier_id = _panier_id
@@ -57,7 +58,5 @@ begin
     and jour between _date_debut and _date_fin;
   commit;
 
-end; $procedure$
+end; $function$
 ;
-
-
