@@ -1,14 +1,14 @@
-alter table "public"."abonnements" drop constraint "abonnements_adherent_id_fkey";
+alter table "abonnements" drop constraint "abonnements_adherent_id_fkey";
 
-alter table "public"."livraisons" drop constraint "livraisons_abonnement_id_fkey";
+alter table "livraisons" drop constraint "livraisons_abonnement_id_fkey";
 
-alter table "public"."abonnements" add constraint "abonnements_adherent_id_fkey" FOREIGN KEY (adherent_id) REFERENCES adherents(adherent_id) ON DELETE CASCADE not valid;
+alter table "abonnements" add constraint "abonnements_adherent_id_fkey" FOREIGN KEY (adherent_id) REFERENCES adherents(adherent_id) ON DELETE CASCADE not valid;
 
-alter table "public"."abonnements" validate constraint "abonnements_adherent_id_fkey";
+alter table "abonnements" validate constraint "abonnements_adherent_id_fkey";
 
-alter table "public"."livraisons" add constraint "livraisons_abonnement_id_fkey" FOREIGN KEY (abonnement_id) REFERENCES abonnements(abonnement_id) ON DELETE CASCADE not valid;
+alter table "livraisons" add constraint "livraisons_abonnement_id_fkey" FOREIGN KEY (abonnement_id) REFERENCES abonnements(abonnement_id) ON DELETE CASCADE not valid;
 
-alter table "public"."livraisons" validate constraint "livraisons_abonnement_id_fkey";
+alter table "livraisons" validate constraint "livraisons_abonnement_id_fkey";
 
 set check_function_bodies = off;
 

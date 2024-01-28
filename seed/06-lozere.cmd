@@ -1,4 +1,4 @@
 @echo off
 set PGPASSWORD=postgres
 
-call A-tables.cmd 06-lozere
+call tables.cmd 06-lozere

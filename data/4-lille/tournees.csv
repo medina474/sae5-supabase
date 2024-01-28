@@ -1,0 +1,7 @@
+tournee_id,jardin_id,tournee,preparation_id,calendrier_id,ordre,couleur
+13,4,Mardi après-midi,5,,1,#8ac926
+14,4,Mercredi matin,5,,2,#ff595e
+15,4,Mercredi après-midi,5,,3,#ffca3a
+16,4,Jeudi matin,6,,1,#1982c4
+17,4,Jeudi après midi,6,,2,#6a4c93
+18,14,Vendredi matin,6,,3,#343434
