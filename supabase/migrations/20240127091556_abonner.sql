@@ -1,15 +1,3 @@
-alter table "abonnements" drop constraint "abonnements_adherent_id_fkey";
-
-alter table "livraisons" drop constraint "livraisons_abonnement_id_fkey";
-
-alter table "abonnements" add constraint "abonnements_adherent_id_fkey" FOREIGN KEY (adherent_id) REFERENCES adherents(adherent_id) ON DELETE CASCADE not valid;
-
-alter table "abonnements" validate constraint "abonnements_adherent_id_fkey";
-
-alter table "livraisons" add constraint "livraisons_abonnement_id_fkey" FOREIGN KEY (abonnement_id) REFERENCES abonnements(abonnement_id) ON DELETE CASCADE not valid;
-
-alter table "livraisons" validate constraint "livraisons_abonnement_id_fkey";
-
 set check_function_bodies = off;
 
 CREATE OR REPLACE FUNCTION public.abonner(_adherent_id bigint, _panier_id bigint, _distribution_id bigint, _date date, _quantite int default 0)

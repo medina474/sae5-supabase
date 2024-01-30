@@ -43,3 +43,9 @@ alter table only paniers
 
 alter table only paniers
   add constraint paniers_produit_id_fkey foreign key (produit_id) references produits(produit_id);
+
+alter table paniers
+  add constraint paniers_frequence_id_fkey foreign key (frequence_id) references frequences(frequence_id) not valid;
+
+alter table paniers
+  validate constraint paniers_frequence_id_fkey;
