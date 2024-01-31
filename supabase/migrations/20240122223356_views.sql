@@ -64,3 +64,6 @@ as select a.adherent_id,
    from adherents a
      join adhesions d on a.adherent_id = d.adherent_id
   where a.jardin_id <> d.jardin_id;
+
+create or replace view view_preparer
+as select * from preparations;
