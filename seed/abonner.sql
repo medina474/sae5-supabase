@@ -1,4 +1,4 @@
-select adherer(6);
+select adherer();
 select abonner(1584, 3, 14, '2023-02-01');
 -
 
