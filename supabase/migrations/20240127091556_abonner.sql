@@ -75,6 +75,6 @@ begin
 end; $function$;
 
 
-create or replace view check_livtaisons_feries as  select p.jour
+create or replace view check_livraisons_feries as  select p.jour
    from (plannings p
      join feries f on ((f.jour = p.jour)));
