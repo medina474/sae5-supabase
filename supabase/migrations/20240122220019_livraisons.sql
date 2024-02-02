@@ -51,7 +51,7 @@ alter table livraisons
 
 
 create view check_livraisons_feries as
-  select p.jour
+  select l.jour
    from (livraisons l
      join feries f on ((f.jour = l.jour)));
 

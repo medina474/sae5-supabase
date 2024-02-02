@@ -1,5 +1,3 @@
-set check_function_bodies = off;
-
 create function adherer()
  returns integer
  language plpgsql

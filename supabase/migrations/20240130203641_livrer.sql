@@ -1,6 +1,4 @@
-set check_function_bodies = off;
-
-create or replace function livrer()
+create function livrer()
  returns table (preparation_id bigint, preparation text,
  tournee_id bigint, tournee text,
  depot_id bigint, depot text,
@@ -20,7 +18,7 @@ from livraisons l
 join distributions d on d.distribution_id = l.distribution_id
 join tournees t on t.tournee_id = d.tournee_id
 join preparations p on p.preparation_id = t.preparation_id
-where livre = false
+where livre = 'à livrer'
 order by jour asc
 limit 1;
 

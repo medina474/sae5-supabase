@@ -25,9 +25,9 @@ as select j.jardin_id,
     c.contact,
     c.telephone,
     c.email
-   from jardins j
-     left join adresses a on a.adresse_id = j.adresse_id
-     left join contacts c on c.contact_id = j.contact_id;
+  from jardins j
+    left join adresses a on a.adresse_id = j.adresse_id
+    left join contacts c on c.contact_id = j.contact_id;
 
 create view view_depots_details
 as select d.depot_id,
@@ -41,9 +41,9 @@ as select d.depot_id,
     c.contact,
     c.telephone,
     c.email
-   from depots d
-     left join adresses a on a.adresse_id = d.adresse_id
-     left join contacts c on c.contact_id = d.contact_id;
+  from depots d
+    left join adresses a on a.adresse_id = d.adresse_id
+    left join contacts c on c.contact_id = d.contact_id;
 
 create view view_calendriers_details
 as select c.calendrier_id,
@@ -52,18 +52,15 @@ as select c.calendrier_id,
     f.frequence,
     count(p.*) as count,
     sum(p.quantite) as sum
-   from calendriers c
-     left join plannings p on p.calendrier_id = c.calendrier_id
-     join saisons s on s.jardin_id = c.jardin_id and p.jour >= s.date_debut and p.jour <= s.date_fin
-     join frequences f on f.frequence_id = p.frequence_id
+  from calendriers c
+    left join plannings p on p.calendrier_id = c.calendrier_id
+    join saisons s on s.jardin_id = c.jardin_id and p.jour >= s.date_debut and p.jour <= s.date_fin
+    join frequences f on f.frequence_id = p.frequence_id
   group by c.calendrier_id, s.saison_id, s.saison, p.frequence_id, f.frequence;
 
 create view check_adherents_adhesions
 as select a.adherent_id,
     a.adherent
-   from adherents a
-     join adhesions d on a.adherent_id = d.adherent_id
+  from adherents a
+    join adhesions d on a.adherent_id = d.adherent_id
   where a.jardin_id <> d.jardin_id;
-
-create view view_preparer
-as select * from preparations;
