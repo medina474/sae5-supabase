@@ -1,6 +1,6 @@
 set check_function_bodies = off;
 
-create or replace function public.abonner(_adherent_id bigint, _panier_id bigint, _distribution_id bigint, _date date, _quantite int default 0)
+create function public.abonner(_adherent_id bigint, _panier_id bigint, _distribution_id bigint, _date date, _quantite int default 0)
  returns bigint
  language plpgsql
 as $function$
@@ -75,6 +75,6 @@ begin
 end; $function$;
 
 
-create or replace view check_livraisons_feries as  select p.jour
+create view check_livraisons_feries as  select p.jour
    from (plannings p
      join feries f on ((f.jour = p.jour)));

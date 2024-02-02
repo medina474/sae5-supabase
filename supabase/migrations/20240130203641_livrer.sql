@@ -1,13 +1,13 @@
 set check_function_bodies = off;
 
-CREATE OR REPLACE FUNCTION livrer()
- RETURNS table (preparation_id bigint, preparation text,
+create or replace function livrer()
+ returns table (preparation_id bigint, preparation text,
  tournee_id bigint, tournee text,
  depot_id bigint, depot text,
 livraison_id bigint,
 adherent text, produit text)
- LANGUAGE plpgsql
-AS $function$
+ language plpgsql
+as $function$
 declare
   _preparation_id bigint;
  _semaine int;

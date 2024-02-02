@@ -1,6 +1,6 @@
 set check_function_bodies = off;
 
-create or replace function public.adherer()
+create function adherer()
  returns integer
  language plpgsql
 as $function$

@@ -1,4 +1,4 @@
-create or replace view view_nb_adherents_par_jardin
+create view view_nb_adherents_par_jardin
 as select j.jardin_id,
     j.jardin,
     count(a.*) as nb_adherents
@@ -6,7 +6,7 @@ as select j.jardin_id,
     left join adherents a on a.jardin_id = j.jardin_id
   group by j.jardin_id;
 
-create or replace view view_nb_depots_par_jardin
+create view view_nb_depots_par_jardin
 as select j.jardin_id,
     j.jardin,
     count(d.*) as nb_depots
@@ -14,7 +14,7 @@ as select j.jardin_id,
     left join depots d on d.jardin_id = j.jardin_id
   group by j.jardin_id;
 
-create or replace view view_jardins_details
+create view view_jardins_details
 as select j.jardin_id,
     j.jardin,
     j.tva,
@@ -29,7 +29,7 @@ as select j.jardin_id,
      left join adresses a on a.adresse_id = j.adresse_id
      left join contacts c on c.contact_id = j.contact_id;
 
-create or replace view view_depots_details
+create view view_depots_details
 as select d.depot_id,
     d.jardin_id,
     d.depot,
@@ -45,7 +45,7 @@ as select d.depot_id,
      left join adresses a on a.adresse_id = d.adresse_id
      left join contacts c on c.contact_id = d.contact_id;
 
-create or replace view view_calendriers_details
+create view view_calendriers_details
 as select c.calendrier_id,
     c.calendrier,
     s.saison,
@@ -58,12 +58,12 @@ as select c.calendrier_id,
      join frequences f on f.frequence_id = p.frequence_id
   group by c.calendrier_id, s.saison_id, s.saison, p.frequence_id, f.frequence;
 
-create or replace view check_adherents_adhesions
+create view check_adherents_adhesions
 as select a.adherent_id,
     a.adherent
    from adherents a
      join adhesions d on a.adherent_id = d.adherent_id
   where a.jardin_id <> d.jardin_id;
 
-create or replace view view_preparer
+create view view_preparer
 as select * from preparations;
