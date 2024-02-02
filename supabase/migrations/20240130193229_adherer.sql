@@ -1,9 +1,9 @@
 set check_function_bodies = off;
 
-create or replace function adherer()
+create or replace function public.adherer()
  returns integer
  language plpgsql
-AS $function$
+as $function$
 declare
   _saison_id bigint;
   _nb bigint;

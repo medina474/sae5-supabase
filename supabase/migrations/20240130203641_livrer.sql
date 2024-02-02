@@ -2,6 +2,7 @@ set check_function_bodies = off;
 
 CREATE OR REPLACE FUNCTION livrer()
  RETURNS table (preparation_id bigint, preparation text,
+ tournee_id bigint, tournee text,
  depot_id bigint, depot text,
 livraison_id bigint,
 adherent text, produit text)
@@ -24,6 +25,7 @@ order by jour asc
 limit 1;
 
 return query select p.preparation_id, p.preparation,
+t.tournee_id,t.tournee,
 t2.depot_id , t2.depot,
 l.livraison_id,
 h.adherent,
@@ -39,6 +41,6 @@ join paniers p2 on a.panier_id = p2.panier_id
 join produits p3 on p3.produit_id = p2.produit_id
 where p.preparation_id = _preparation_id
 and DATE_PART('week',l.jour) = _semaine
-order by d.ordre;
+order by t.ordre, d.ordre;
 
 end; $function$;

@@ -1,9 +1,9 @@
 set check_function_bodies = off;
 
-CREATE OR REPLACE FUNCTION public.abonner(_adherent_id bigint, _panier_id bigint, _distribution_id bigint, _date date, _quantite int default 0)
- RETURNS bigint
- LANGUAGE plpgsql
-AS $function$
+create or replace function public.abonner(_adherent_id bigint, _panier_id bigint, _distribution_id bigint, _date date, _quantite int default 0)
+ returns bigint
+ language plpgsql
+as $function$
 declare
   _jardin_id bigint;
   _saison_id bigint;

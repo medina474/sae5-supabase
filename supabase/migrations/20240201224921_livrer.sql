@@ -1,15 +1,19 @@
-drop view if exists "public"."check_livraisons_feries";
+create or replace view check_plannings_feries as
+  select p.jour
+   from (plannings p
+     join feries f on ((f.jour = p.jour)));
 
-set check_function_bodies = off;
+create or replace view check_plannings_semaine as
+  select p.planning_id, p.jour, s.saison from plannings p
+  join saisons s on p.jour between s.date_debut and s.date_fin
+  where
+    date_part ('week', p.jour) in (
+      select semaine from fermetures where fermetures.saison_id = s.saison_id
+    );
 
-create or replace view "public"."check_livtaisons_feries" as  SELECT p.jour
-   FROM (plannings p
-     JOIN feries f ON ((f.jour = p.jour)));
-
-
-CREATE OR REPLACE FUNCTION public.adherer()
- RETURNS integer
- LANGUAGE plpgsql
+create or replace function public.adherer()
+ returns integer
+ language plpgsql
 AS $function$
 declare
   _saison_id bigint;
@@ -30,20 +34,3 @@ return _nb;
 
 end; $function$
 ;
-
-
-
-CREATE OR REPLACE FUNCTION public.changer_date_livraison()
- RETURNS trigger
- LANGUAGE plpgsql
-AS $function$
-begin
-	update livraisons set jour = new.jour where jour = old.jour;
-	return new;
-end; $function$
-;
-
-create trigger change_date_planning after
-update
-    on
-    public.plannings for each row execute function changer_date_livraison();
