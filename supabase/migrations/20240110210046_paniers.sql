@@ -54,3 +54,12 @@ alter table paniers
 
 alter table paniers
   validate constraint paniers_frequence_id_fkey;
+
+alter table paniers enable row level security;
+
+create policy "Enable read access for all users"
+on paniers
+as permissive
+for select
+to public
+using (true);

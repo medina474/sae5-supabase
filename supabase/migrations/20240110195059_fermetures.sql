@@ -23,6 +23,18 @@ alter table only fermetures
 alter table fermetures
   add constraint fermeture check (semaine <= 53);
 
+alter table fermetures enable row level security;
+
+create policy "Enable read access for all users"
+on fermetures
+as permissive
+for select
+to public
+using (true);
+
+
+-- jours fériés
+
 create table feries (
   ferie_id bigint not null,
   jardin_id bigint,
@@ -44,3 +56,12 @@ alter table only feries
 
 alter table only feries
   add constraint feries_jardin_id_fkey foreign key (jardin_id) references jardins(jardin_id) on update cascade;
+
+alter table feries enable row level security;
+
+create policy "Enable read access for all users"
+on feries
+as permissive
+for select
+to public
+using (true);

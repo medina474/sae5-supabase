@@ -22,6 +22,17 @@ alter table only saisons
 alter table only saisons
     add constraint saisons_jardin_id_fkey foreign key (jardin_id) references jardins(jardin_id) on delete cascade;
 
+alter table saisons enable row level security;
+
+create policy "Enable read access for all users"
+on saisons
+as permissive
+for select
+to public
+using (true);
+
+
+-- frequences
 
 create table frequences (
   frequence_id bigint not null,

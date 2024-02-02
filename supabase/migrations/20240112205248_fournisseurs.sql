@@ -29,3 +29,13 @@ alter table fournisseurs
 
 alter table fournisseurs
   validate constraint fournisseurs_adresse_id_fkey;
+
+
+alter table fournisseurs enable row level security;
+
+create policy "Enable read access for all users"
+on fournisseurs
+as permissive
+for select
+to public
+using (true);

@@ -23,6 +23,17 @@ alter table only adherents
 alter table only adherents
   add constraint adherents_jardin_id_fkey foreign key (jardin_id) references jardins(jardin_id);
 
+alter table adherents enable row level security;
+
+create policy "Enable read access for all users"
+on "adherents"
+as permissive
+for select
+to public
+using (true);
+
+
+-- adhesions
 
 create table adhesions (
   adhesion_id bigint not null,
@@ -57,3 +68,12 @@ alter table only adhesions
 alter table only adhesions
   add constraint adhesions_un
   unique (adherent_id,jardin_id,saison_id);
+
+alter table adhesions enable row level security;
+
+create policy "Enable read access for all users"
+on adhesions
+as permissive
+for select
+to public
+using (true);
