@@ -73,9 +73,3 @@ begin
 
    return _abonnement_id;
 end; $function$;
-
-
-create view check_livraisons_feries as
-  select p.jour
-  from (plannings p
-    join feries f on ((f.jour = p.jour)));

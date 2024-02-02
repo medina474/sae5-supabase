@@ -10,13 +10,14 @@ declare
 begin
 
 select saison_id into _saison_id
-from saisons s order by date_debut desc;
+  from saisons s
+  order by date_debut desc;
 
 with insertion as (
-insert into adhesions (jardin_id, adherent_id, date_adhesion, montant, saison_id)
-select a.jardin_id, a.adherent_id, now(), 30, _saison_id
-from adherents a
-where a.date_sortie is null returning *)
+  insert into adhesions (jardin_id, adherent_id, date_adhesion, montant, saison_id)
+  select a.jardin_id, a.adherent_id, now(), 30, _saison_id
+  from adherents a
+  where a.date_sortie is null returning *)
 select count(*) into _nb from insertion;
 
 return _nb;
