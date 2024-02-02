@@ -24,7 +24,7 @@ alter table only saisons
 
 alter table saisons enable row level security;
 
-create policy "Enable read access for all users"
+create policy "Lecture publique"
 on saisons
 as permissive
 for select

@@ -31,3 +31,11 @@ alter table depots
   add constraint "depots_contact_id_fkey" foreign key (contact_id) references contacts(contact_id) not valid;
 
 alter table depots validate constraint "depots_contact_id_fkey";
+alter table depots enable row level security;
+
+create policy "Lecture publique"
+on depots
+as permissive
+for select
+to public
+using (true);

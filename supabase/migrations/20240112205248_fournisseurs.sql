@@ -33,7 +33,7 @@ alter table fournisseurs
 
 alter table fournisseurs enable row level security;
 
-create policy "Enable read access for all users"
+create policy "Lecture publique"
 on fournisseurs
 as permissive
 for select

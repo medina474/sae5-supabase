@@ -25,7 +25,7 @@ alter table fermetures
 
 alter table fermetures enable row level security;
 
-create policy "Enable read access for all users"
+create policy "Lecture publique"
 on fermetures
 as permissive
 for select
@@ -59,7 +59,7 @@ alter table only feries
 
 alter table feries enable row level security;
 
-create policy "Enable read access for all users"
+create policy "Lecture publique"
 on feries
 as permissive
 for select

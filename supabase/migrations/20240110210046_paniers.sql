@@ -22,6 +22,19 @@ alter table only produits
   add constraint produits_jardin_id_fkey
   foreign key (jardin_id) references jardins(jardin_id);
 
+
+alter table produits enable row level security;
+
+create policy "Lecture publique"
+on produits
+as permissive
+for select
+to public
+using (true);
+
+
+-- paniers
+
 create table paniers (
     panier_id bigint not null,
     produit_id bigint not null,
@@ -57,7 +70,7 @@ alter table paniers
 
 alter table paniers enable row level security;
 
-create policy "Enable read access for all users"
+create policy "Lecture publique"
 on paniers
 as permissive
 for select

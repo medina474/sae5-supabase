@@ -25,7 +25,7 @@ alter table only adherents
 
 alter table adherents enable row level security;
 
-create policy "Enable read access for all users"
+create policy "Lecture publique"
 on "adherents"
 as permissive
 for select
@@ -71,7 +71,7 @@ alter table only adhesions
 
 alter table adhesions enable row level security;
 
-create policy "Enable read access for all users"
+create policy "Lecture publique"
 on adhesions
 as permissive
 for select
