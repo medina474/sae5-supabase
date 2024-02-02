@@ -72,6 +72,16 @@ alter table jardins
   validate constraint jardins_adresse_id_fkey;
 
 
+alter table adresses enable row level security;
+
+create policy "Lecture publique"
+on adresses
+as permissive
+for select
+to public
+using (true);
+
+
 -- contacts
 
 create table contacts (
@@ -107,3 +117,12 @@ alter table jardins
 
 alter table jardins
   validate constraint jardins_contact_id_fkey;
+
+alter table contacts enable row level security;
+
+create policy "Lecture publique"
+on contacts
+as permissive
+for select
+to public
+using (true);

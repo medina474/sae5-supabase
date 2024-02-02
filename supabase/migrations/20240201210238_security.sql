@@ -1,18 +1,10 @@
 alter table abonnements enable row level security;
 
-alter table adresses enable row level security;
-
 alter table calendriers enable row level security;
-
-alter table contacts enable row level security;
 
 alter table distributions enable row level security;
 
-
-
 alter table frequences enable row level security;
-
-alter table livraisons enable row level security;
 
 alter table modes_paiement enable row level security;
 
@@ -29,28 +21,12 @@ for select
 to public
 using (true);
 
-
-create policy "Lecture publique"
-on "adresses"
-as permissive
-for select
-to public
-using (true);
-
 create policy "Lecture publique"
 on "calendriers"
 as permissive
 for select
 to public
 using (true);
-
-create policy "Lecture publique"
-on "contacts"
-as permissive
-for select
-to public
-using (true);
-
 
 create policy "Lecture publique"
 on "distributions"
@@ -66,15 +42,6 @@ as permissive
 for select
 to public
 using (true);
-
-
-create policy "Lecture publique"
-on "livraisons"
-as permissive
-for select
-to public
-using (true);
-
 
 create policy "Lecture publique"
 on "modes_paiement"
@@ -97,9 +64,6 @@ as permissive
 for select
 to public
 using (true);
-
-
-
 
 create policy "Lecture publique"
 on "tournees"

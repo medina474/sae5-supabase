@@ -31,3 +31,12 @@ alter table livraisons
 alter table livraisons
   add constraint livraison_jardin_id_fkey
   foreign key (jardin_id) references jardins (jardin_id) on delete cascade;
+
+alter table livraisons enable row level security;
+
+create policy "Lecture publique"
+on livraisons
+as permissive
+for select
+to public
+using (true);
