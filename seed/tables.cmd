@@ -2,6 +2,8 @@ set JARDIN=%JARDIN%
 set JARDIN=%1
 set ANNEE=2024
 
+::psql -h localhost -p 54322 -d postgres -U postgres
+
 :: JARDINS, localisation et contact
 
 set TABLE=jardins
