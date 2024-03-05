@@ -30,16 +30,32 @@ Deno.serve(async (req) => {
     from tournees t order by t.ordre`
 
     for (const tournee of tournees) {
-const distributions = await sql`
-    select p.depot_id, p.depot
-    , d.ordre
-    ,p.capacite
-    ,a.adresse,a.codepostal,a.ville,st_x(a.localisation),st_y(a.localisation)
-    from distributions d
-    inner join depots p on d.depot_id = p.depot_id
-    left join adresses a on a.adresse_id = p.depot_id
-    where tournee_id = ${tournee.tournee_id}
-    order by d.ordre`
+      const distributions = await sql`
+        select d.distribution_id
+          , p.depot_id
+          , p.depot
+          , d.ordre
+          ,p.capacite
+          ,a.adresse,a.codepostal,a.ville,st_x(a.localisation),st_y(a.localisation)
+        from distributions d
+        inner join depots p on d.depot_id = p.depot_id
+        left join adresses a on a.adresse_id = p.depot_id
+        where tournee_id = ${tournee.tournee_id}
+        order by d.ordre`
+
+      for (const distribution of distributions) {
+        const livraisons = await sql`
+          select count(l.livraison_id),
+            p.panier
+          from livraisons l
+          inner join abonnements a on a.abonnement_id = l.abonnement_id
+          inner join paniers p on p.panier_id = a.panier_id
+          where l.distribution_id = ${distribution.distribution_id}
+          and date_part('week',l.jour) = ${body.semaine}
+          group by p.panier_id`
+          distribution.livraisons = livraisons
+      }
+
       tournee.distribution = distributions
     }
 
