@@ -1,4 +1,4 @@
-depot_id,jardin_id,depot,adresse_id,contact_id,capacite
+"depot_id","jardin_id","depot","adresse_id","contact_id","capacite"
 65,2,Eglise Saint Antoine,65,,40
 66,2,Ligue de l’enseignement,66,,40
 67,2,Centre Léo Lagrange,67,,60
@@ -13,28 +13,28 @@ depot_id,jardin_id,depot,adresse_id,contact_id,capacite
 76,2,Mr et Mme Boulassel,76,,20
 77,2,Jardins de Cocagne,77,,100
 78,2,Madame Pierot,78,,20
-79,2,3ème Rive Café Associatif,79,,20
+79,2,"3ème Rive Café Associatif",79,,20
 80,2,Point Vert Mafra,80,,20
 81,2,Brico Marché,81,,20
 82,2,Pro & Cie,82,,20
 83,2,M. Lecomte François,83,,20
 84,2,Maison de l'Étudiant,90,,20
-85,2,La Tête à Toto,,,20
-86,2,Jardins de Cocagne,,,100
-95,2,Secours Catholique,,,20
-96,2,Conseil Départemental des Vosges,,,20
-97,2,Association Rhyzome,,,20
-98,2,Denninger,,,20
-99,2,Crédit Agricole Épinal,,,20
-100,2,Adinolfi,,,20
-101,2,Papeterie Golbey Norske Skog,,,10
-102,2,Vosgelis (Épinal),,,20
-103,2,Vosgelis (Remiremont),,,20
-104,2,Renouveau,,,20
-105,2,DVIS,,,20
-106,2,Maison de l'environnement,,,20
 107,2,Peridon,,,20
 108,2,Bouvier Emmanuel,,,10
-109,2,La Quarterelle,,,20
-110,2,Moustache Bikes,,,10
-111,2,Biocoop Épinal,,,20
+110,2,Moustache Bikes,93,,10
+111,2,Biocoop Épinal,94,,20
+85,2,La Tête à Toto,95,,20
+86,2,Jardins de Cocagne,77,,100
+95,2,Secours Catholique,96,,20
+96,2,Conseil Départemental des Vosges,97,,20
+97,2,Association Rhyzome,98,,20
+98,2,Denninger,99,,20
+99,2,Crédit Agricole Épinal,100,,20
+100,2,Adinolfi,101,,20
+101,2,Papeterie Golbey Norske Skog,102,,10
+102,2,Vosgelis (Épinal),103,,20
+103,2,Vosgelis (Remiremont),104,,20
+104,2,Renouveau,105,,20
+105,2,DVIS,106,,20
+106,2,Maison de l'environnement,107,,20
+109,2,La Quarterelle,108,,20
