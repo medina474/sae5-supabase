@@ -27,7 +27,8 @@ Deno.serve(async (req) => {
     , calendrier_id
     , ordre
     , couleur
-    from tournees t order by t.ordre`
+    from tournees t
+    where tournee_id = ${body.tournee_id}s`
 
     for (const tournee of tournees) {
       const distributions = await sql`
