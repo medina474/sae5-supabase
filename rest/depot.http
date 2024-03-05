@@ -1,7 +1,12 @@
+### Tous les dépôts
+GET https://ytpaqpikqarnveticqhl.supabase.co/rest/v1/depots
+apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl0cGFxcGlrcWFybnZldGljcWhsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQwNDQ3MzUsImV4cCI6MjAxOTYyMDczNX0.4glNGKdXcHAXUyWuO5fpvcmg4oRyH9TvtTZ7OYMkcfc
+
+
 ###
-GET https://ytpaqpikqarnveticqhl.supabase.co/rest/v1/depots?depot_id=eq.65&select=*
+GET https://ytpaqpikqarnveticqhl.supabase.co/rest/v1/depots?depot_id=eq.65
 apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl0cGFxcGlrcWFybnZldGljcWhsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQwNDQ3MzUsImV4cCI6MjAxOTYyMDczNX0.4glNGKdXcHAXUyWuO5fpvcmg4oRyH9TvtTZ7OYMkcfc
 
 ###
-GET https://ytpaqpikqarnveticqhl.supabase.co/rest/v1/view_depots_details?depot_id=eq.65&select=*
+GET https://ytpaqpikqarnveticqhl.supabase.co/rest/v1/view_depots_details?depot_id=eq.65&jardin_id=eq.3
 apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl0cGFxcGlrcWFybnZldGljcWhsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQwNDQ3MzUsImV4cCI6MjAxOTYyMDczNX0.4glNGKdXcHAXUyWuO5fpvcmg4oRyH9TvtTZ7OYMkcfc
