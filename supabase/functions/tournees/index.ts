@@ -1,5 +1,5 @@
 /*
- * supabase functions deploy detail --no-verify-jwt
+ * supabase functions deploy tournees --no-verify-jwt
  */
 import postgres from 'https://deno.land/x/postgresjs/mod.js'
 
@@ -28,7 +28,7 @@ Deno.serve(async (req) => {
     , ordre
     , couleur
     from tournees t
-    where tournee_id = ${body.tournee_id}s`
+    where tournee_id = ${body.tournee_id}`
 
     for (const tournee of tournees) {
       const distributions = await sql`
@@ -46,15 +46,31 @@ Deno.serve(async (req) => {
 
       for (const distribution of distributions) {
         const livraisons = await sql`
-          select count(l.livraison_id),
-            p.panier
+          select count(l.livraison_id)
+            ,p.panier_id
+            ,p.panier
           from livraisons l
           inner join abonnements a on a.abonnement_id = l.abonnement_id
           inner join paniers p on p.panier_id = a.panier_id
           where l.distribution_id = ${distribution.distribution_id}
           and date_part('week',l.jour) = ${body.semaine}
           group by p.panier_id`
-          distribution.livraisons = livraisons
+        distribution.livraisons = livraisons
+
+        for (const panier of livraisons) {
+          const adherents = await sql`
+            select
+            a.adherent_id
+            ,h.adherent
+            from livraisons l
+            inner join abonnements a on a.abonnement_id = l.abonnement_id
+            inner join adherents h on a.adherent_id = h.adherent_id
+            where l.distribution_id = ${distribution.distribution_id}
+            and a.panier_id = ${panier.panier_id}
+            and date_part('week',l.jour) = ${body.semaine}
+            `
+          panier.adherents = adherents.map(elt => parseInt(elt.adherent_id))
+          }
       }
 
       tournee.distribution = distributions
