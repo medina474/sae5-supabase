@@ -26,7 +26,7 @@ alter table only adherents
 alter table adherents enable row level security;
 
 create policy "Lecture publique"
-on "adherents"
+on adherents
 as permissive
 for select
 to public

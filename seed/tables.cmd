@@ -1,6 +1,6 @@
 set PGHOST=aws-0-eu-central-1.pooler.supabase.com
 set PGPORT=6543
-set PGUSER=postgres.ytpaqpikqarnveticqhl
+set PGUSER=postgres.qjnieztpwnwroinqrolm
 set PGPASSWORD=7QiavT8a1Avzuj0DYEzz
 
 set PGHOST=localhost
