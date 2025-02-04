@@ -116,23 +116,23 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 	 (110,2,'Moustache Bikes',NULL,NULL,10),
 	 (111,2,'Biocoop Épinal',NULL,NULL,20);
 
-insert into preparations (preparation_id,jardin_id,preparation,ordre) values
-	 (3,2,'Mardi',1),
-	 (4,2,'Jeudi',2);
+insert into preparations (preparation_id,jardin_id,preparation,jour) values
+	 (1,2,'Mardi',1),
+	 (2,2,'Jeudi',3);
 
 insert into tournees (tournee_id,jardin_id,tournee,preparation_id,calendrier_id,ordre,couleur) values
-	 (1,2,'Mardi',3,1,1,'#ef476f'),
-	 (3,2,'Mercredi matin',3,2,3,'#ffd166'),
-	 (4,2,'Mercredi après-midi',3,2,4,'#06d6a0'),
-	 (5,2,'Mercredi (Ent.)',3,2,5,'#118ab2'),
-	 (6,2,'Mercredi (Jardins)',3,2,6,'#073b4c'),
-	 (7,2,'Jeudi (Salariés)',4,4,1,'#a2304b'),
-	 (2,2,'Mardi (Jardins)',3,1,2,'#038966'),
-	 (8,2,'Jeudi (Charmes)',4,4,2,'#094e65'),
-	 (9,2,'Vendredi (Épinal)',4,3,3,'#b29247'),
-	 (10,2,'Vendredi (Gérardmer)',4,3,4,'#000000'),
-	 (11,2,'Vendredi (Ent.)',4,3,5,'#ff4b5e'),
-	 (12,2,'Vendredi (Jardins)',4,3,6,'#07ffbe');
+	 (1,2,'Mardi',1,1,1,'#ef476f'),
+	 (2,2,'Mardi (Jardins)',1,1,2,'#038966'),
+	 (3,2,'Mercredi matin',1,2,3,'#ffd166'),
+	 (4,2,'Mercredi après-midi',1,2,4,'#06d6a0'),
+	 (5,2,'Mercredi (Jardins)',1,2,6,'#073b4c'),
+	 (6,2,'Jeudi (Salariés)',2,4,1,'#a2304b'),
+	 (7,2,'Vendredi (Épinal)',2,3,3,'#b29247'),
+	 (8,2,'Vendredi (Jardins)',2,3,6,'#07ffbe'),
+	 (9,2,'Jeudi (Charmes)',2,4,2,'#094e65'),
+	 (10,2,'Vendredi (Gérardmer)',2,3,4,'#000000'),
+	 (11,2,'Mercredi (Ent.)',1,2,5,'#118ab2'),
+	 (12,2,'Vendredi (Ent.)',2,3,5,'#ff4b5e');
 
 insert into produits (produit_id,jardin_id,produit) values
 	 (1,2,'Panier simple'),
