@@ -31,10 +31,6 @@ insert into feries (ferie_id,jardin_id,ferie,jour) values
 (8,1,'Toussaint','2025-11-01'),
 (9,1,'Armistice 1918','2025-11-11');
 
-insert into preparations (preparation_id,jardin_id,preparation,jour) values
-(1,1,'Mardi',1),
-(2,1,'Jeudi',3);
-
 -- Dépôts
 
 insert into contacts (contact_id,jardin_id,contact,telephone,email) values
@@ -50,29 +46,19 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 
 -- Calendriers
 
-insert into frequences (frequence_id,jardin_id,frequence) values
-(1,1,'hebdomadaire'),
-(2,1,'15 jours'),
-(3,1,'libre');
-
 insert into calendriers (calendrier_id,jardin_id,calendrier) values
 (1,1,'Livraisons du mardi');
 
-insert into tournees (tournee_id,jardin_id,tournee,preparation_id,calendrier_id,ordre,couleur) values
-(1,1,'Mardi (Épinal)',1,1,1,'#ef476f');
-
-insert into distributions (distribution_id,jardin_id,tournee_id,depot_id,ordre) values
-(1,1,1,2,1);
-
-insert into adherents (adherent_id,jardin_id,adherent,depot_id) values
-(1,1,'RODRIQUE Daniel',2);
-
-insert into adhesions (adhesion_id,adherent_id,jardin_id,date_adhesion,montant,saison_id) values
-(1,1,1,'2025-02-01',30,1);
+-- Produits
 
 insert into produits (produit_id,jardin_id,produit) values
 (1,1,'Panier simple'),
 (2,1,'Panier familial');
+
+insert into frequences (frequence_id,jardin_id,frequence) values
+(1,1,'hebdomadaire'),
+(2,1,'15 jours'),
+(3,1,'libre');
 
 insert into paniers (panier_id,produit_id,panier,frequence_id,quantite) values
 (1,1,'Panier simple hebdomadaire',1,50),
@@ -80,8 +66,27 @@ insert into paniers (panier_id,produit_id,panier,frequence_id,quantite) values
 (3,2,'Panier familial hebdomadaire',1,50),
 (4,2,'Panier familial 15 jours',2,25);
 
+-- Adhérents
+
+insert into adherents (adherent_id,jardin_id,adherent,depot_id) values
+(1,1,'RODRIQUE Daniel',2);
+
+insert into adhesions (adhesion_id,adherent_id,jardin_id,date_adhesion,montant,saison_id) values
+(1,1,1,'2025-02-01',30,1);
+
+
 insert into abonnements (abonnement_id,adherent_id,panier_id) values
 (1,1,1);
+
+insert into preparations (preparation_id,jardin_id,preparation,jour) values
+(1,1,'Mardi',1),
+(2,1,'Jeudi',3);
+
+insert into tournees (tournee_id,jardin_id,tournee,preparation_id,calendrier_id,ordre,couleur) values
+(1,1,'Mardi (Épinal)',1,1,1,'#ef476f');
+
+insert into distributions (distribution_id,jardin_id,tournee_id,depot_id,ordre) values
+(1,1,1,2,1);
 
 insert into livraisons (livraison_id,jardin_id,abonnement_id,distribution_id,qte,livre,jour) values
 (1,1,1,1,1,'livré','2025-01-07'),
