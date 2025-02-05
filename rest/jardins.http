@@ -1,3 +1,11 @@
-### Tous les dépôts
+### Tous les jardins
 GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/jardins?select=jardin_id,jardin,tva,adresses!jardins_adresse_id_fkey(adresse,ville),contacts!jardins_contact_id_fkey(contact,telephone)
+apikey: {{$dotenv APIKEY}}
+
+### Tous les dépôts
+GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/depots?jardin_id=eq.1&select=depot_id,depot,capacite,adresses(adresse,ville),contacts(contact,telephone)
+apikey: {{$dotenv APIKEY}}
+
+### Tous les adhérents
+GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/adherents?jardin_id=eq.1&select=adherent,email,date_sortie
 apikey: {{$dotenv APIKEY}}
