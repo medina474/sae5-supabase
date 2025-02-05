@@ -50,8 +50,11 @@ insert into adherents (adherent_id,jardin_id,adherent,depot_id) values
 insert into adhesions (adhesion_id,adherent_id,jardin_id,date_adhesion,montant,saison_id) values
 (1,1,1,'2025-02-01',30,1);
 
-insert into paniers (panier_id,jardin_id,panier) values
+insert into produits (produit_id,jardin_id,produit) values
 (1,1,'Panier simple');
+
+insert into paniers (panier_id,produit_id,panier,quantite) values
+(1,1,'Panier simple hebdomadaire',50);
 
 insert into abonnements (abonnement_id,adherent_id,panier_id) values
 (1,1,1);
