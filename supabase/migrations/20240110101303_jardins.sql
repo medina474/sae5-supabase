@@ -1,5 +1,6 @@
 -- show search_path;
 -- set search_path to "\$user", public, extensions;
+-- create schema extensions
 
 create table jardins (
   jardin_id bigint not null,
