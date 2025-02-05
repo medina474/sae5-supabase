@@ -11,6 +11,8 @@ insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation
 
 update jardins set adresse_id = 1 where jardin_id = 1;
 
+-- Calendrier général
+
 insert into saisons (saison_id,jardin_id,saison,date_debut,date_fin) values
 (1,1,'2025','2025-01-01','2025-12-31');
 
@@ -33,6 +35,8 @@ insert into preparations (preparation_id,jardin_id,preparation,jour) values
 (1,1,'Mardi',1),
 (2,1,'Jeudi',3);
 
+-- Dépôts
+
 insert into contacts (contact_id,jardin_id,contact,telephone,email) values
 (2,1,'Fursy Galriawla','0678283490',NULL),
 (3,1,'Iseline Triiwel','0755044134',NULL);
@@ -43,6 +47,13 @@ insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation
 insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
 (1,1,'Jardins de Cocagne',1,2,100),
 (2,1,'Centre Léo Lagrange',2,3,60);
+
+-- Calendriers
+
+insert into frequences (frequence_id,jardin_id,frequence) values
+(1,1,'hebdomadaire'),
+(2,1,'15 jours'),
+(3,1,'libre');
 
 insert into calendriers (calendrier_id,jardin_id,calendrier) values
 (1,1,'Livraisons du mardi');
@@ -60,63 +71,66 @@ insert into adhesions (adhesion_id,adherent_id,jardin_id,date_adhesion,montant,s
 (1,1,1,'2025-02-01',30,1);
 
 insert into produits (produit_id,jardin_id,produit) values
-(1,1,'Panier simple');
+(1,1,'Panier simple'),
+(2,1,'Panier familial');
 
-insert into paniers (panier_id,produit_id,panier,quantite) values
-(1,1,'Panier simple hebdomadaire',50);
+insert into paniers (panier_id,produit_id,panier,frequence_id,quantite) values
+(1,1,'Panier simple hebdomadaire',1,50),
+(2,1,'Panier simple 15 jours',2,25),
+(3,2,'Panier familial hebdomadaire',1,50),
+(4,2,'Panier familial 15 jours',2,25);
 
 insert into abonnements (abonnement_id,adherent_id,panier_id) values
 (1,1,1);
 
 insert into livraisons (livraison_id,jardin_id,abonnement_id,distribution_id,qte,livre,jour) values
-(1,1,1,1,1,'à livrer','2025-01-07'),
-(1985263;3;Vrai;1;28;2025;14/01/25),
-(1985264;4;Vrai;1;28;2025;21/01/25),
-(1985265;5;Vrai;1;28;2025;28/01/25),
-(1985266;6;Vrai;1;28;2025;04/02/25),
-(1985267;7,'à livrer',1;28;2025;11/02/25),
-(1985268;8,'à livrer',1;28;2025;18/02/25),
-(1985269;9,'à livrer',1;28;2025;25/02/25),
-(1985270;10,'à livrer',1;28;2025;04/03/25;APS;2812),
-(1985271;11,'à livrer',1;28;2025;11/03/25;APS;2812),
-(1985272;12,'à livrer',1;28;2025;18/03/25;APS;2812),
-(1985273;13,'à livrer',1;28;2025;25/03/25;APS;2812),
-(1985274;14,'à livrer',1;28;2025;01/04/25;APS;2812),
-(1985275;15,'à livrer',1;28;2025;08/04/25;APS;2812),
-(1985276;16,'à livrer',1;28;2025;15/04/25;APS;2812),
-(1985277;17,'à livrer',1;28;2025;22/04/25;APS;2812),
-(1985278;18,'à livrer',1;28;2025;29/04/25;APS;2812),
-(1985279;19,'à livrer',1;28;2025;06/05/25;APS;2812),
-(1985280;20,'à livrer',1;28;2025;13/05/25;APS;2812),
-(1985281;21,'à livrer',1;28;2025;20/05/25;APS;2812),
-(1985282;22,'à livrer',1;28;2025;27/05/25;APS;2812),
-(1985283;23,'à livrer',1;28;2025;03/06/25;APS;2812),
-(1985284;24,'à livrer',1;28;2025;10/06/25;APS;2812),
-(1985285;25,'à livrer',1;28;2025;17/06/25;APS;2812),
-(1985286;26,'à livrer',1;28;2025;24/06/25;APS;2812),
-(1985287;27,'à livrer',1;28;2025;01/07/25;APS;2812),
-(1985288;28,'à livrer',1;28;2025;08/07/25;APS;2812),
-(1985289;29,'à livrer',1;28;2025;15/07/25;APS;2812),
-(1985290;30,'à livrer',1;28;2025;22/07/25;APS;2812),
-(1985291;31,'à livrer',1;28;2025;29/07/25;APS;2812),
-(1985292;32,'à livrer',1;28;2025;05/08/25;APS;2812),
-(1985293;33,'à livrer',1;28;2025;12/08/25;APS;2812),
-(1985294;34,'à livrer',1;28;2025;19/08/25;APS;2812),
-(1985295;35,'à livrer',1;28;2025;26/08/25;APS;2812),
-(1985296;36,'à livrer',1;28;2025;02/09/25;APS;2812),
-(1985297;37,'à livrer',1;28;2025;09/09/25;APS;2812),
-(1985298;38,'à livrer',1;28;2025;16/09/25;APS;2812),
-(1985299;39,'à livrer',1;28;2025;23/09/25;APS;2812),
-(1985300;40,'à livrer',1;28;2025;30/09/25;APS;2812),
-(1985301;41,'à livrer',1;28;2025;07/10/25;APS;2812),
-(1985302;42,'à livrer',1;28;2025;14/10/25;APS;2812),
-(1985303;43,'à livrer',1;28;2025;21/10/25;APS;2812),
-(1985304;44,'à livrer',1;28;2025;28/10/25;APS;2812),
-(1985305;45,'à livrer',1;28;2025;04/11/25;APS;2812),
-(1985306;46,'à livrer',1;28;2025;10/11/25;APS;2812),
-(1985307;47,'à livrer',1;28;2025;18/11/25;APS;2812),
-(1985308;48,'à livrer',1;28;2025;25/11/25;APS;2812),
-(1985309;49,'à livrer',1;28;2025;02/12/25;APS;2812),
-(1985310;50,'à livrer',1;28;2025;09/12/25;APS;2812),
-(1985311;51,'à livrer',1;28;2025;16/12/25;APS;2812);
-
+(1,1,1,1,1,'livré','2025-01-07'),
+(2,1,1,1,1,'livré','2025-01-14'),
+(3,1,1,1,1,'livré','2025-01-21'),
+(4,1,1,1,1,'livré','2025-01-28'),
+(5,1,1,1,1,'livré','2025-02-04'),
+(6,1,1,1,1,'à livrer','2025-02-11'),
+(7,1,1,1,1,'à livrer','2025-02-18'),
+(8,1,1,1,1,'à livrer','2025-02-25'),
+(9,1,1,1,1,'à livrer','2025-03-04'),
+(10,1,1,1,1,'à livrer','2025-03-11'),
+(11,1,1,1,1,'à livrer','2025-03-18'),
+(12,1,1,1,1,'à livrer','2025-03-25'),
+(13,1,1,1,1,'à livrer','2025-04-01'),
+(14,1,1,1,1,'à livrer','2025-04-08'),
+(15,1,1,1,1,'à livrer','2025-04-15'),
+(16,1,1,1,1,'à livrer','2025-04-22'),
+(17,1,1,1,1,'à livrer','2025-04-29'),
+(18,1,1,1,1,'à livrer','2025-05-06'),
+(19,1,1,1,1,'à livrer','2025-05-13'),
+(20,1,1,1,1,'à livrer','2025-05-20'),
+(21,1,1,1,1,'à livrer','2025-05-27'),
+(22,1,1,1,1,'à livrer','2025-06-03'),
+(23,1,1,1,1,'à livrer','2025-06-10'),
+(24,1,1,1,1,'à livrer','2025-06-17'),
+(25,1,1,1,1,'à livrer','2025-06-24'),
+(26,1,1,1,1,'à livrer','2025-07-01'),
+(27,1,1,1,1,'à livrer','2025-07-08'),
+(28,1,1,1,1,'à livrer','2025-07-15'),
+(29,1,1,1,1,'à livrer','2025-07-22'),
+(30,1,1,1,1,'à livrer','2025-07-29'),
+(31,1,1,1,1,'à livrer','2025-08-05'),
+(32,1,1,1,1,'à livrer','2025-08-12'),
+(33,1,1,1,1,'à livrer','2025-08-19'),
+(34,1,1,1,1,'à livrer','2025-08-26'),
+(35,1,1,1,1,'à livrer','2025-09-02'),
+(36,1,1,1,1,'à livrer','2025-09-09'),
+(37,1,1,1,1,'à livrer','2025-09-16'),
+(38,1,1,1,1,'à livrer','2025-09-23'),
+(39,1,1,1,1,'à livrer','2025-09-30'),
+(40,1,1,1,1,'à livrer','2025-10-07'),
+(41,1,1,1,1,'à livrer','2025-10-14'),
+(42,1,1,1,1,'à livrer','2025-10-21'),
+(43,1,1,1,1,'à livrer','2025-10-28'),
+(44,1,1,1,1,'à livrer','2025-11-04'),
+(45,1,1,1,1,'à livrer','2025-11-10'),
+(46,1,1,1,1,'à livrer','2025-11-18'),
+(47,1,1,1,1,'à livrer','2025-11-25'),
+(48,1,1,1,1,'à livrer','2025-12-02'),
+(49,1,1,1,1,'à livrer','2025-12-09'),
+(50,1,1,1,1,'à livrer','2025-12-16');
