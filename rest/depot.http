@@ -1,5 +1,5 @@
 ### Tous les dépôts
-GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/depots
+GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/depots?jardin_id=eq.2&select=depot_id,depot,adresses(adresse,ville)
 apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFqbmllenRwd253cm9pbnFyb2xtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc4MTEwNTAsImV4cCI6MjA1MzM4NzA1MH0.orLZFmX3i_qR0H4H6WwhUilNf5a1EAfrFhbbeRvN41M
 
 

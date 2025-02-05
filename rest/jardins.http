@@ -1,0 +1,3 @@
+### Tous les dépôts
+GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/jardins?select=jardin_id,jardin,tva,adresses!jardins_adresse_id_fkey(adresse,ville),contacts!jardins_contact_id_fkey(contact,telephone)
+apikey: {{$dotenv APIKEY}}

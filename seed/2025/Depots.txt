@@ -1,0 +1,83 @@
+﻿id_depot;etat;nom;num;jour;domicile;ordre;CT_Adresse;CT_Ville;CT_CodePostal;id_distribution
+1;;Livraison à domicile;00;Mercredi matin;Vrai;1;;;;3
+28;;Livraison à domicile;30;Vendredi;Vrai;12;;;;7
+31;;Livraison à domicile;32;Mercredi après midi;Vrai;5;;;;4
+2041;;Livraison Domicile Charmes;05;;Vrai;3;;;;9
+2034;;Livraison à Domicile;99;Mardi;Vrai;4;;;;1
+2;;Secours Catholique;01;Vendredi;Faux;2;1 Place de Verdun;NOMEXY;88440;9
+3;;Asso Etudiant Universitaire;02;Mercredi matin;Faux;4;9 Rue de la Louvière;EPINAL;88000;1
+4;;Conseil Départemental des Vosges Mardi;03;Vendredi;Faux;6;8 Rue de la Préfecture;EPINAL;88000;1
+5;;Asso RHYZOME;04;Vendredi;Faux;5;15 Rue des Jardiniers;EPINAL;88000;1
+2015;;Garage Renault- Station Service;15;Mercredi après midi;Faux;18;664 Rue de la Gare;POUXEUX;88550;4
+7;;Pharmacie St Nabord;06;Mercredi après midi;Faux;3;24, Rue du Général de Gaulle;SAINT-NABORD;88200;4
+2024;;GACI;50;Mercredi après midi;Faux;4;28 Rue de la Joncherie;REMIREMONT;88200;4
+9;;DENNINGER;08;Vendredi;Faux;4;36 Bis Rue de la Plaine;GOLBEY;88190;7
+10;;3 ème Rive - Café Associatif;09;Mercredi matin;Faux;18;15 Rue Maréchal Lyautey;EPINAL;88000;7
+11;;Crédit Agricole Epinal;10;Mercredi matin;Faux;19; Allée des Erables;EPINAL;88000;3
+12;;Jardins de Cocagne Vendredi;11;Vendredi;Faux;2;Prairie Claudel;THAON LES VOSGES;88150;8
+13;;Centre Léo Lagrange;12;Mercredi matin;Faux;24;6 av Salvador Allende;EPINAL;88000;7
+14;;BOULASSEL Docelles;13;Mercredi après midi;Faux;17;1, Rue Moncey;DOCELLES;88460;4
+398;;BOTANIC;22;Vendredi;Faux;25;Avenue des Terres St Jean;EPINAL;88000;7
+397;;BOTANIC;19;Mercredi matin;Faux;2;Avenue des Terres St Jean;EPINAL;88000;4
+396;;BOTANIC mardi;23;Vendredi;Faux;1;Avenue des Terres St Jean;EPINAL;88000;1
+2011;;EGLISE St Antoine;42;Mercredi matin;Faux;6;Eglise St Antoine Rue Armand Colle;EPINAL;88000;3
+17;;ADINOLFI;16;Vendredi;Faux;9;7, Allée des Primevères;LES FORGES;88390;7
+2016;;LA QUARTERELLE;61;Mercredi après midi;Faux;10;3 Rue Carterelle;REMIREMONT;88200;4
+19;;Papeterie Golbey Norske Skog;18;Vendredi;Faux;3; ZI Route Charles Pellerin;GOLBEY;88190;7
+20;;Pro et Cie Gérardmer;20;Mercredi matin;Faux;3;7 Rue de la République ;GERARDMER;88530;10
+21;;Madame PIEROT Charmes;21;Vendredi;Faux;1;15, Rue Ste Barbe;CHARMES;88130;9
+2013;;EGLISE St Antoine;44;Vendredi;Faux;5;Eglise St Antoine Rue Armand Colle;EPINAL;88000;7
+24;;DVIS Epinal;25;Mercredi matin;Faux;17;1 Rue de la Préfecture;EPINAL;88000;3
+25;;PERIDON;26;Mercredi après midi;Faux;11;7, Rue du Savron;RAON AUX BOIS;88220;4
+26;;Ligne Enseignement (Mardi AM);28;Mercredi matin;Faux;11;15 Rue Général de Reffye;EPINAL;88000;1
+27;;DENNINGER;29;Mercredi matin;Faux;14;36 bis Rue de la Plaine;GOLBEY;88190;3
+29;;Chambre d'Agriculture;31;Mercredi matin;Faux;5;17, Rue André Vitu;EPINAL;88000;3
+30;;Jardins de Cocagne Mercredi;27;Mercredi matin;Faux;1;Prairie Claudel;THAON LES VOSGES;88150;5
+75;;BIOCOOP Epinal ;34;vendredi;Faux;19;7, Rue du Boudiou;EPINAL;88000;7
+61;;JARDINS SALARIES MARDI;33;Mardi;Faux;1;Prairie Claudel;THAON LES VOSGES;88150;2
+351;;JARDINS SALARIES JEUDI;35;vendredi;Faux;1;Prairie Claudel;THAON LES VOSGES;88150;6
+1465;;Ligue de L'Enseignement;14;Mercredi matin;Faux;13;15 Rue du Général de Reffye;EPINAL;88000;3
+2018;;LIGUE DE L'ENSEIGNEMENT;24;Vendredi;Faux;15;15 Rue du Général de Reffye;EPINAL;88000;7
+1618;;GACI;51;Mercredi après midi;Faux;5;28 Rue de la Joncherie;REMIREMONT;88200;4
+1619;;GACI;52;Mercredi après midi;Faux;6;28 Rue de la Joncherie;REMIREMONT;88200;4
+1636;;GACI;53;Mercredi après midi;Faux;7;28 Rue de la Joncherie;REMIREMONT;88200;4
+2022;;Office du Tourisme;57;Mercredi après midi;Faux;9;6 Place Christian Poncelet;REMIREMONT;88200;4
+1891;;Moustaches Bikes Mercredi;36;Mardi;Faux;2;Prairie Claudel;THAON LES VOSGES;88150;11
+2010;;Moustaches Bikes Vendredi;37;Vendredi;Faux;1;Prairie Claudel;THAON LES VOSGES;88150;12
+2012;;EGLISE St Antoine;43;Mercredi matin;Faux;7;Eglise St Antoine Rue Armand Colle;EPINAL;88000;3
+2014;;EGLISE St Antoine;45;Vendredi;Faux;6;Eglise St Antoine Rue Armand Colle;EPINAL;88000;7
+2032;;EGLISE St Antoine;71;Mardi;Faux;8;Eglise St Antoine Rue Armand Colle;EPINAL;88000;1
+2031;;EGLISE St Antoine;70;Mardi;Faux;7;Eglise St Antoine Rue Armand Colle;EPINAL;88000;1
+2030;;EGLISE St Antoine;72;Mardi;Faux;8;Eglise St Antoine Rue Armand Colle;EPINAL;88000;3
+2025;;Maison de l'Environnement;46;Mercredi matin;Faux;16;12, Rue  Raymond Poincaré;EPINAL;88000;3
+2026;;Maison de l'Environnement;47;Vendredi;Faux;20;12, Rue  Raymond Poincaré;EPINAL;88000;7
+2033;;LECOMTE François;17;Vendredi;Faux;5;24 Route de Noirpré;LE THOLY;88530;10
+2037;;Pro et Cie Gérardmer;40;;Faux;4;7 Rue de la République;GERARDMER;88400;10
+2038;;Salariés Jardins   Administratif;35A;;Faux;1;Prairie Claudel;THAON LES VOSGES;88150;8
+2039;;Point VERT  Bruyères vendredi;60;;Faux;2;5 Rue des Résistants ZA Barbazan;BRUYERES;88600;10
+2040;;DENNINGER    mardi AM;49;;Faux;12;36 bis Rue de la Plaine ;GOLBEY;88190;1
+2042;;VOSGELIS ( Vendredi );48;;Faux;8;Quai Barbier;Epinal;88000;7
+2043;;VOSGELIS Remiremont (Mercredi);38;;Faux;8;4 Place de l'abbaye;REMIREMONT;88200;4
+2045;;Livraison  Domicile   Bruyères   ;07;;Vrai;1;;;;10
+2046;;Centre Léo Lagrange;41;;Faux;15;6 av Salvador Allende;EPINAL;88000;1
+2047;;BOUVIER Emmanuel;65;;Faux;13;557 rue du Chêne;HADOL;88220;4
+2048;;RESERVE Mardi AM;ZMA;;Faux;16;;;;1
+2049;;RESERVE Mercredi Matin;ZMM;;Faux;21;;;;3
+2050;;RESERVE Remiremont;ZMR;;Faux;1;;;;4
+2051;;RESERVE Vendredi;ZVe;;Faux;28;;;;7
+2052;;APF Dinozé;75;;Faux;9;Rue de la Papeterie;DINOZE;88 000;1
+2053;;La Tête à Toto;77;;Faux;26; 26, Quai des Bons Enfants;EPINAL;88000;7
+2054;;Ligue de l'Enseignement;58;;Faux;10;15 Rue du Général Reffye;EPINAL;88000;1
+2055;;Brico Marché;55;;Faux;1;2 Rue du Fraisne;BRUYERES;88600;10
+2056;;Léo Lagrange (Mardi) ;62;;Faux;13;Chemin du Tambour Major;EPINAL;88 000;1
+2057;;Léo Lagrange (Mardi);67;;Faux;14;Chemin du Tambour Major;EPINAL;88000;1
+2058;;Léo Lagrange (Mercredi);64;;Faux;4;Chemin du Tambour Major;EPINAL;88000;3
+2059;;Léo Lagrange (Mercredi);69;;Faux;3;Chemin du Tambour Major;EPINAL;88000;3
+2060;;Ligue de l'enseignement;54;;Faux;12;15 Rue du général de Reffye;EPINAL;88000;3
+2061;;Ligue de l'Enseignement;74;;Faux;14;15 Rue du Général de Reffye;EPINAL;88000;7
+2062;;Résidence du Moncey - 80 -;80;;Faux;3;Ruelle du Moncey;VINCEY;88450;9
+2063;;Complexe Sportif Charmes - 81 -;81;;Faux;5;Bld Georges Clemenceau;CHARMES;88130;9
+2064;;Complexe Sportif Charmes - 82 -;82;;Faux;6;Bld Georges Clémenceau;CHARMES;88130;9
+2065;;UIMM;78;;Faux;1;Label Initiative;Thaon les Vosges;88150;11
+2066;;EGLISE St Antoine;73;;Faux;7;Eglise St Antoine  Rue Armand Colle;EPINAL;88000;7
+2069;;FIVES;83;;Faux;2;2 Rue des Amériques;GOLBEY;88190;7

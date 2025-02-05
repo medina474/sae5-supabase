@@ -1,0 +1,29 @@
+﻿id_produit;proprietaire;date_creation;heure_creation;date_modification;heure_modification;groupe;nom;AR_PRIXVEN;paniers;AR_Sommeil;domicile;AR_REF;AR_DESIGN;soutien;attente;doublage
+121;;29/12/08;15:40:53;27/12/16;03:00:41;;Panier familial attente x12;194;12;Vrai;Faux;APAF12;Abonnemment Annuel Panier Attente familial x 12 /an;Faux;Vrai;
+122;;29/12/08;15:40:53;27/12/16;03:00:41;;Panier simple attente x12;108;12;Vrai;Faux;APAS12;Abonnemment Annuel Panier Attente Simple x 12 / an;Faux;Vrai;APAF12
+123;;29/12/08;15:40:53;27/12/16;03:00:41;;Panier familial attente x12;240;12;Vrai;Vrai;APDAF12;Abonnemment Annuel Panier Domicile Attente familial x 12 / an;Faux;Vrai;
+124;;29/12/08;15:40:53;27/12/16;03:00:41;;Panier simple attente x12;148;12;Vrai;Vrai;APDAS12;Abonnemment Annuel Panier Domicile Attente Simple x 12 /an;Faux;Vrai;APDAF12
+125;;29/12/08;15:40:53;04/02/25;03:04:52;Familial;Panier familial;1447;50;Faux;Vrai;APDF;Abnnt annuel Panier Domicile famillial;Faux;Faux;
+126;;29/12/08;15:40:53;04/02/25;03:04:52;Familial;Panier familial 15;857;25;Faux;Vrai;APDF15;Abnnt annuel Panier Domicile familial 15;Faux;Faux;
+127;;29/12/08;15:40:53;04/02/25;03:04:52;Simple;Panier simple;894;50;Faux;Vrai;APDS;Abnnt annuel Panier Domicile Simple;Faux;Faux;APDF
+128;;29/12/08;15:40:53;04/02/25;03:04:52;Simple;Panier simple 15;497;25;Faux;Vrai;APDS15;Abnnt annuel Panier Domicile Simple 15;Faux;Faux;APDF15
+129;;29/12/08;15:40:53;04/02/25;03:04:52;Familial;Panier familial soutien x12;100;12;Faux;Vrai;APDSF12;Abnnt annuel Panier Domicile Soutien familial x 12 ;Vrai;Faux;
+130;;29/12/08;15:40:53;04/02/25;03:04:52;Familial;Panier familial soutien x6;100;6;Faux;Vrai;APDSF6;Abnnt annuel Panier Domicile Soutien familial x 6;Vrai;Faux;
+131;;29/12/08;15:40:53;04/02/25;03:04:52;Simple;Panier simple soutien x12;100;12;Faux;Vrai;APDSS12;Abnnt annuel Panier Domicile Soutien Simple x 12 ;Vrai;Faux;APDSF12
+132;;29/12/08;15:40:53;04/02/25;03:04:52;Simple;Panier simple soutien x6;100;6;Faux;Vrai;APDSS6;Abnnt annuel Panier Domicile Soutien Simple x 6;Vrai;Faux;APDSF6
+133;;29/12/08;15:40:53;04/02/25;03:04:52;Familial;Panier familial;1186;50;Faux;Faux;APF;Abnnt annuel Panier Familial;Faux;Faux;
+134;;29/12/08;15:40:53;04/02/25;03:04:52;Familial;Panier familial 15;658;25;Faux;Faux;APF15;Abnnt annuel Panier Familial 15;Faux;Faux;
+135;;29/12/08;15:40:53;04/02/25;03:04:52;Simple;Panier simple;689;50;Faux;Faux;APS;Abnnt annuel Panier Simple;Faux;Faux;APF
+136;;29/12/08;15:40:53;04/02/25;03:04:52;Simple;Panier simple 15;404;25;Faux;Faux;APS15;Abnnt annuel Panier Simple 15;Faux;Faux;APF15
+137;;29/12/08;15:40:53;04/02/25;03:04:52;Familial;Panier familial soutien x12;318;12;Faux;Faux;APSF12;Abnnt annuel Panier Soutien familial x 12;Vrai;Faux;
+138;;29/12/08;15:40:53;04/02/25;03:04:52;Familial;Panier familial soutien x6;160;6;Faux;Faux;APSF6;Abnnt annuel Panier Soutien familial x 6 ;Vrai;Faux;
+139;;29/12/08;15:40:53;04/02/25;03:04:52;Simple;Panier simple soutien x12;196;12;Faux;Faux;APSS12;Abnnt annuel Panier Soutien simple x 12;Vrai;Faux;APSF12
+140;;29/12/08;15:40:53;04/02/25;03:04:52;Simple;Panier simple soutien x6;98;6;Faux;Faux;APSS6;Abnnt annuel Panier Soutien Simple x 6 ;Vrai;Faux;APSF6
+2451;;06/01/11;08:37:56;04/02/25;03:04:52;Simple;Solidaire simple;2,5;0;Faux;Faux;MPSSO;Panier Simple Solidaire;Faux;Faux;APF
+2452;;06/12/16;03:06:48;04/02/25;03:04:52;Fruité 1;Panier fruité 1;14;0;Faux;Faux;ABF1;Abnnt Panier Fruité 1;Faux;Faux;
+2453;;06/12/16;03:06:48;04/02/25;03:04:52;Fruité 2;Panier fruité 2;17;0;Faux;Faux;ABF2;Abnnt Panier Fruité 2;Faux;Faux;
+2454;;06/12/16;03:06:48;04/02/25;03:04:52;Fruité 3;Panier fruité 3;23;0;Faux;Faux;ABF3;Abnnt Panier Fruité 3;Faux;Faux;
+2455;;06/12/16;03:06:48;04/02/25;03:04:52;Fruité;Panier fruité 4;23,5;0;Faux;Faux;ABF4;Abnnt Panier Fruité 4;Faux;Faux;
+2456;;13/10/21;03:03:34;04/02/25;03:04:52;Oeuf;Boite oeufs x6;3,05;0;Faux;Faux;ABOEUF6;Abnt Boite 6 Oeufs ;Faux;Faux;
+2457;;15/11/23;18:13:30;04/02/25;03:04:52;Familial;Panier familial unité;23,7;0;Faux;Faux;MPFH;Abnnt unitaire Panier Familial;Faux;Faux;
+2458;;15/11/23;18:13:30;04/02/25;03:04:52;Simple;Panier simple unité;13,8;0;Faux;Faux;MPSH;Abnnt unitaire Panier Simple;Faux;Faux;
