@@ -46,3 +46,12 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 
 insert into adherents (adherent_id,jardin_id,adherent,depot_id) values
 (1,1,'RODRIQUE Daniel',2);
+
+insert into adhesions (adhesion_id,adherent_id,jardin_id,date_adhesion,montant,saison_id) values
+(1,1,1,'2025-02-01',30,1);
+
+insert into paniers (panier_id,jardin_id,panier) values
+(1,1,'Panier simple');
+
+insert into abonnements (abonnement_id,adherent_id,panier_id) values
+(1,1,1);
