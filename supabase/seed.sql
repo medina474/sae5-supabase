@@ -52,16 +52,20 @@ insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation
 (12,1,'7 Rue du Savron','88220','Raon-aux-Bois','SRID=4326;POINT(6.5036466 48.0504027)'),
 (13,1,'1 rue Moncey','88460','Docelles','SRID=4326;POINT(6.6162166 48.1460719)'),
 (15,1,'15 rue du Maréchal Lyautey','88000','Épinal','SRID=4326;POINT(6.4457306 48.177777)'),
-(16,1,'Zac Barbazan','88600','Bruyères','SRID=4326;POINT(6.7208371 48.2032056)'),
-(17,1,'2 rue de Fraisne','88600','Bruyères','SRID=4326;POINT(6.7196903 48.2050495)'),
-(18,1,'45 boulevard d''Alsace','88400','Gérardmer','SRID=4326;POINT(6.8763148 48.0738404)'),
-(19,1,'24 route du Noirpré','88530','Le Tholy','SRID=4326;POINT(6.7477787 48.0812967)'),
 (20,1,'9 rue de la Louvière','88000','Épinal','SRID=4326;POINT(6.4531588 48.1723212)');
 
 insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation) values
 (21,1,'1 place de Verdun', '88440', 'Nomexy', 'SRID=4326;POINT(6.386527 48.305704)'),
 (22,1,'Ruelle de Monsey', '88450', 'Vincey', 'SRID=4326;POINT(6.330850 48.337907)'),
-(23,1,'15 rue Ste Barbe','88130','Charmes','SRID=4326;POINT(6.2951122 48.3777043)');
+(23,1,'15 rue Ste Barbe','88130','Charmes','SRID=4326;POINT(6.2951122 48.3777043)'),
+(24,1,'Bld Georges Clemenceau','88130','Charmes','SRID=4326;POINT(6.298452 48.375298)');
+
+insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation) values
+(16,1,'Zac Barbazan','88600','Bruyères','SRID=4326;POINT(6.7208371 48.2032056)'),
+(17,1,'2 rue de Fraisne','88600','Bruyères','SRID=4326;POINT(6.7196903 48.2050495)'),
+(18,1,'7 rue de la République','88400','Gérardmer','SRID=4326;POINT(6.877433 48.074172)'),
+(19,1,'24 route du Noirpré','88530','Le Tholy','SRID=4326;POINT(6.7477787 48.0812967)');
+
 
 insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
 (1,1,'Jardins de Cocagne',1,2,100),
@@ -78,16 +82,19 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 (12,1,'Raon aux Bois',12,NULL,20),
 (13,1,'Mr et Mme Boulassel',13,NULL,20),
 (15,1,'3ème Rive Café Associatif',15,NULL,20),
-(16,1,'Point Vert Mafra',16,NULL,20),
-(17,1,'Brico Marché',17,NULL,20),
-(18,1,'Pro & Cie',18,NULL,20),
-(19,1,'M. Lecomte François',19,NULL,20),
 (20,1,'Maison de l’Étudiant',20,NULL,20);
 
 insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
 (21,1,'Secours Catholique',21,NULL,20),
 (22,1,'Résidence du Monsey',22,NULL,20),
-(23,1,'Madame Pierot',23,NULL,20);
+(23,1,'Madame Pierot',23,NULL,20),
+(24,1,'Complexe Sportif',24,NULL,40);
+
+insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
+(16,1,'Point Vert Mafra',16,NULL,20),
+(17,1,'Brico Marché',17,NULL,20),
+(18,1,'Pro & Cie',18,NULL,40),
+(19,1,'M. Lecomte François',19,NULL,20);
 
 -- Calendriers
 
@@ -2345,7 +2352,15 @@ insert into distributions (distribution_id,jardin_id,tournee_id,depot_id,ordre) 
 insert into distributions (distribution_id,jardin_id,tournee_id,depot_id,ordre) values
 (29,1,9,21,1),
 (30,1,9,22,2),
-(31,1,9,13,3);
+(31,1,9,13,3),
+(32,1,9,23,4);
+
+-- Vendredi (Gérardmer)
+insert into distributions (distribution_id,jardin_id,tournee_id,depot_id,ordre) values
+(33,1,10,16,1),
+(33,1,10,17,2),
+(33,1,10,18,3),
+(33,1,10,19,4);
 
 insert into livraisons (livraison_id,jardin_id,abonnement_id,distribution_id,qte,livre,planning_id) values
 (1,1,28127,1,1,'livré',1),
