@@ -46,13 +46,15 @@ insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation
 (6,1,'36 bis rue de la Plaine','88190','Golbey','SRID=4326;POINT(6.4426982 48.1929337)'),
 (7,1,'avenue des Terres St Jean','88190','Golbey','SRID=4326;POINT(6.4692286 48.1891998)'),
 (8,1,'17 rue André Vitu','88000','Épinal','SRID=4326;POINT(6.465403 48.1775685)'),
+(15,1,'15 rue du Maréchal Lyautey','88000','Épinal','SRID=4326;POINT(6.4457306 48.177777)'),
+(20,1,'9 rue de la Louvière','88000','Épinal','SRID=4326;POINT(6.4531588 48.1723212)');
+
+insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation) values
 (9,1,'24 rue du Gal de Gaulle','88200','St Nabord','SRID=4326;POINT(6.5807814 48.0510352)'),
 (10,1,'26 rue de la Joncherie','88200','Remiremont','SRID=4326;POINT(6.5934293 48.0189339)'),
 (11,1,'6 Place C. Poncelet','88200','Remiremont','SRID=4326;POINT(6.5917178 48.0159918)'),
 (12,1,'7 Rue du Savron','88220','Raon-aux-Bois','SRID=4326;POINT(6.5036466 48.0504027)'),
-(13,1,'1 rue Moncey','88460','Docelles','SRID=4326;POINT(6.6162166 48.1460719)'),
-(15,1,'15 rue du Maréchal Lyautey','88000','Épinal','SRID=4326;POINT(6.4457306 48.177777)'),
-(20,1,'9 rue de la Louvière','88000','Épinal','SRID=4326;POINT(6.4531588 48.1723212)');
+(13,1,'1 rue Moncey','88460','Docelles','SRID=4326;POINT(6.6162166 48.1460719)');
 
 insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation) values
 (21,1,'1 place de Verdun', '88440', 'Nomexy', 'SRID=4326;POINT(6.386527 48.305704)'),
@@ -76,13 +78,15 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 (6,1,'Ecodenn’ergie',6,NULL,20),
 (7,1,'Botanic',7,NULL,20),
 (8,1,'Chambre d’Agriculture',8,NULL,20),
-(9,1,'Pharmacie Robert',9,NULL,20),
-(10,1,'Association GACI',10,NULL,20),
-(11,1,'Office du tourisme',11,NULL,20),
-(12,1,'Raon aux Bois',12,NULL,20),
-(13,1,'Mr et Mme Boulassel',13,NULL,20),
 (15,1,'3ème Rive Café Associatif',15,NULL,20),
 (20,1,'Maison de l’Étudiant',20,NULL,20);
+
+insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
+(9,1,'Pharmacie Robert',9,NULL,20),
+(10,1,'Association GACI',10,NULL,80),
+(11,1,'Office du tourisme',11,NULL,20),
+(12,1,'Raon aux Bois',12,NULL,20),
+(13,1,'Mr et Mme Boulassel',13,NULL,20);
 
 insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
 (21,1,'Secours Catholique',21,NULL,20),
@@ -2326,27 +2330,22 @@ insert into distributions (distribution_id,jardin_id,tournee_id,depot_id,ordre) 
 (5,1,1,6,6),
 (6,1,1,7,7),
 (7,1,1,8,9),
-(8,1,2,9,1),
-(9,1,3,10,1),
-(10,1,3,11,2),
-(11,1,3,12,3),
-(12,1,3,13,4),
-(13,1,1,14,4),
 (14,1,1,15,3),
-(15,1,1,16,8),
-(16,1,1,17,10),
-(17,1,3,18,5),
-(18,1,3,19,6),
 (19,1,3,20,8),
 (20,1,3,10,9),
 (21,1,4,11,1),
 (22,1,4,12,3),
 (23,1,4,13,2),
-(24,1,4,14,4),
-(25,1,4,15,5),
-(26,1,4,16,6),
-(27,1,4,17,7),
-(28,1,4,18,8);
+(25,1,4,15,5);
+
+-- Mercredi après-midi 
+insert into distributions (distribution_id,jardin_id,tournee_id,depot_id,ordre) values
+(8,1,4,9,1),
+(9,1,4,10,2),
+(10,1,4,11,3),
+(11,1,4,12,4),
+(12,1,4,13,5);
+
 
 -- Jeudi (Charmes)
 insert into distributions (distribution_id,jardin_id,tournee_id,depot_id,ordre) values
@@ -2358,9 +2357,9 @@ insert into distributions (distribution_id,jardin_id,tournee_id,depot_id,ordre) 
 -- Vendredi (Gérardmer)
 insert into distributions (distribution_id,jardin_id,tournee_id,depot_id,ordre) values
 (33,1,10,16,1),
-(33,1,10,17,2),
-(33,1,10,18,3),
-(33,1,10,19,4);
+(34,1,10,17,2),
+(35,1,10,18,3),
+(36,1,10,19,4);
 
 insert into livraisons (livraison_id,jardin_id,abonnement_id,distribution_id,qte,livre,planning_id) values
 (1,1,28127,1,1,'livré',1),
