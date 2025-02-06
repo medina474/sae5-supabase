@@ -49,14 +49,11 @@ create view view_calendriers_details
 as select c.calendrier_id,
     c.calendrier,
     s.saison,
-    f.frequence,
-    count(p.*) as count,
-    sum(p.quantite) as sum
+    count(p.*) as count
   from calendriers c
     left join plannings p on p.calendrier_id = c.calendrier_id
     join saisons s on s.jardin_id = c.jardin_id and p.jour >= s.date_debut and p.jour <= s.date_fin
-    join frequences f on f.frequence_id = p.frequence_id
-  group by c.calendrier_id, s.saison_id, s.saison, p.frequence_id, f.frequence;
+  group by c.calendrier_id, s.saison_id, s.saison;
 
 create view check_adherents_adhesions
 as select a.adherent_id,
