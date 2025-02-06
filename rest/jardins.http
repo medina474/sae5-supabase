@@ -7,5 +7,9 @@ GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/depots?jardin_id=eq.1&selec
 apikey: {{$dotenv APIKEY}}
 
 ### Tous les adhérents
-GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/adherents?jardin_id=eq.1&select=adherent,email,date_sortie
+GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/adherents?jardin_id=eq.1&select=adherent,email,date_sortie,adhesions(adhesion_id)
+apikey: {{$dotenv APIKEY}}
+
+### Toutes les préparations
+GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/preparations?jardin_id=eq.1&select=preparation_id,preparation,jour,tournees(tournee_id, tournee, ordre, distributions(depots(depot, adresses(adresse, ville, localisation))))
 apikey: {{$dotenv APIKEY}}

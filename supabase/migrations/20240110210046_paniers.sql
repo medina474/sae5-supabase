@@ -76,3 +76,9 @@ as permissive
 for select
 to public
 using (true);
+
+create table propositions (
+  proposition_id bigint not null,
+  frequence_id bigint not null,
+  planning_id bigint not null
+)
