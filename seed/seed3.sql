@@ -1,26 +1,3 @@
-
-insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation) values
-	 (76,2,'1 rue Moncey','88460','Docelles','SRID=4326;POINT (6.6162166 48.1460719)'),
-	 (65,2,'12 rue Armand Colle','88000','Épinal','SRID=4326;POINT (6.4489619 48.1604568)'),
-	 (66,2,'15 rue Général de Reffye','88000','Épinal','SRID=4326;POINT (6.4323215 48.1819469)'),
-	 (67,2,'6 avenue Salvador Allende','88000','Épinal','SRID=4326;POINT (6.4599403 48.1938105)'),
-	 (68,2,'rue de la papeterie','88000','Dinozé','SRID=4326;POINT (6.4738942 48.1383687)'),
-	 (69,2,'36 bis rue de la Plaine','88190','Golbey','SRID=4326;POINT (6.4426982 48.1929337)'),
-	 (70,2,'avenue des Terres St Jean','88190','Golbey','SRID=4326;POINT (6.4692286 48.1891998)'),
-	 (71,2,'17 rue André Vitu','88000','Épinal','SRID=4326;POINT (6.465403 48.1775685)'),
-	 (72,2,'24 rue du Gal de Gaulle','88200','St Nabord','SRID=4326;POINT (6.5807814 48.0510352)'),
-	 (73,2,'26 rue de la Joncherie','88200','Remiremont','SRID=4326;POINT (6.5934293 48.0189339)'),
-	 (74,2,'6 Place C. Poncelet','88200','Remiremont','SRID=4326;POINT (6.5917178 48.0159918)'),
-	 (75,2,'7 Rue du Savron','88220','Raon-aux-Bois','SRID=4326;POINT (6.5036466 48.0504027)'),
-	 (77,2,'Prairie Claudel','88150','Thaon-les-Vosges','SRID=4326;POINT (6.427672 48.2531016)'),
-	 (78,2,'15 rue Ste Barbe','88130','Charmes','SRID=4326;POINT (6.2951122 48.3777043)'),
-	 (79,2,'15 rue du Maréchal Lyautey','88000','Épinal','SRID=4326;POINT (6.4457306 48.177777)'),
-	 (80,2,'Zac Barbazan','88600','Bruyères','SRID=4326;POINT (6.7208371 48.2032056)'),
-	 (81,2,'2 rue de Fraisne','88600','Bruyères','SRID=4326;POINT (6.7196903 48.2050495)'),
-	 (82,2,'45 boulevard d''Alsace','88400','Gérardmer','SRID=4326;POINT (6.8763148 48.0738404)'),
-	 (83,2,'24 route du Noirpré','88530','Le Tholy','SRID=4326;POINT (6.7477787 48.0812967)'),
-	 (90,2,'9 rue de la Louvière','88000','Épinal','SRID=4326;POINT (6.4531588 48.1723212)');
-
 insert into contacts (contact_id,jardin_id,contact,telephone,email) values
 	(51,2,'Victoire Poullain','0657354798',NULL),
 	(52,2,'Luca Zucchina','0796543210',NULL),
@@ -39,11 +16,6 @@ insert into contacts (contact_id,jardin_id,contact,telephone,email) values
 	(65,2,'Zeynep Sogan','0757354798',NULL),
 	(66,2,'Andrzej Pomidor','0758324898',NULL);
 
-
-insert into fermetures (fermeture_id,jardin_id,saison_id,semaine) values
-	 (7,2,6,1),
-	 (8,2,6,51);
-
 insert into frequences (frequence_id,jardin_id,frequence) values
 	 (1,2,'hebdomadaire'),
 	 (2,2,'15 jours'),
@@ -55,63 +27,7 @@ insert into calendriers (calendrier_id,jardin_id,calendrier) values
 	 (3,2,'Livraison vendredi'),
 	 (4,2,'Livraison jeudi');
 
-insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
-	 (65,2,'Eglise Saint Antoine',65,NULL,40),
-	 (66,2,'Ligue de l’enseignement',66,NULL,40),
-	 (67,2,'Centre Léo Lagrange',67,NULL,60),
-	 (68,2,'APF - Local extérieur – ESAT',68,NULL,20),
-	 (69,2,'Ecodenn’ergie',69,NULL,20),
-	 (70,2,'Botanic',70,NULL,20),
-	 (71,2,'Chambre d’Agriculture',71,NULL,20),
-	 (72,2,'Pharmacie Robert',72,NULL,20),
-	 (73,2,'Association GACI',73,NULL,80),
-	 (74,2,'Office du tourisme',74,NULL,20),
-	 (75,2,'Raon aux Bois',75,NULL,20),
-	 (76,2,'Mr et Mme Boulassel',76,NULL,20),
-	 (77,2,'Jardins de Cocagne',77,NULL,100),
-	 (78,2,'Madame Pierot',78,NULL,20),
-	 (79,2,'3ème Rive Café Associatif',79,NULL,20),
-	 (80,2,'Point Vert Mafra',80,NULL,20),
-	 (81,2,'Brico Marché',81,NULL,20),
-	 (82,2,'Pro & Cie',82,NULL,20),
-	 (83,2,'M. Lecomte François',83,NULL,20),
-	 (84,2,'Maison de l''Étudiant',90,NULL,20),
-	 (85,2,'La Tête à Toto',NULL,NULL,20),
-	 (86,2,'Jardins de Cocagne',NULL,NULL,100),
-	 (95,2,'Secours Catholique',NULL,NULL,20),
-	 (96,2,'Conseil Départemental des Vosges',NULL,NULL,20),
-	 (97,2,'Association Rhyzome',NULL,NULL,20),
-	 (98,2,'Denninger',NULL,NULL,20),
-	 (99,2,'Crédit Agricole Épinal',NULL,NULL,20),
-	 (100,2,'Adinolfi',NULL,NULL,20),
-	 (101,2,'Papeterie Golbey Norske Skog',NULL,NULL,10),
-	 (102,2,'Vosgelis (Épinal)',NULL,NULL,20);
-
-insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
-	 (103,2,'Vosgelis (Remiremont)',NULL,NULL,20),
-	 (104,2,'Renouveau',NULL,NULL,20),
-	 (105,2,'DVIS',NULL,NULL,20),
-	 (106,2,'Maison de l''environnement',NULL,NULL,20),
-	 (107,2,'Peridon',NULL,NULL,20),
-	 (108,2,'Bouvier Emmanuel',NULL,NULL,10),
-	 (109,2,'La Quarterelle',NULL,NULL,20),
-	 (110,2,'Moustache Bikes',NULL,NULL,10),
-	 (111,2,'Biocoop Épinal',NULL,NULL,20);
-
-insert into tournees (tournee_id,jardin_id,tournee,preparation_id,calendrier_id,ordre,couleur) values
-	 (1,2,'Mardi',1,1,1,'#ef476f'),
-	 (2,2,'Mardi (Jardins)',1,1,2,'#038966'),
-	 (3,2,'Mercredi matin',1,2,3,'#ffd166'),
-	 (4,2,'Mercredi après-midi',1,2,4,'#06d6a0'),
-	 (5,2,'Mercredi (Jardins)',1,2,6,'#073b4c'),
-	 (6,2,'Jeudi (Salariés)',2,4,1,'#a2304b'),
-	 (7,2,'Vendredi (Épinal)',2,3,3,'#b29247'),
-	 (8,2,'Vendredi (Jardins)',2,3,6,'#07ffbe'),
-	 (9,2,'Jeudi (Charmes)',2,4,2,'#094e65'),
-	 (10,2,'Vendredi (Gérardmer)',2,3,4,'#000000'),
-	 (11,2,'Mercredi (Ent.)',1,2,5,'#118ab2'),
-	 (12,2,'Vendredi (Ent.)',2,3,5,'#ff4b5e');
-
+ 
 insert into produits (produit_id,jardin_id,produit) values
 	 (1,2,'Panier simple'),
 	 (2,2,'Panier familial'),
@@ -242,59 +158,9 @@ insert into distributions (distribution_id,jardin_id,tournee_id,depot_id,ordre) 
 	 (99,2,7,77,1),
 	 (100,2,12,86,1);
 
-insert into plannings (planning_id,frequence_id,calendrier_id,jour,quantite) values
-	 (1201,1,1,'2025-01-09',1),
-	 (1202,1,1,'2025-01-16',1),
-	 (1203,1,1,'2025-01-23',1),
-	 (1204,1,1,'2025-01-30',1),
-	 (1205,1,1,'2025-02-06',1),
-	 (1206,1,1,'2025-02-13',1),
-	 (1207,1,1,'2025-02-20',1),
-	 (1208,1,1,'2025-02-27',1),
-	 (1209,1,1,'2025-03-05',1),
-	 (1210,1,1,'2025-03-12',1),
-	 (1211,1,1,'2025-03-19',1),
-	 (1212,1,1,'2025-03-26',1),
-	 (1213,1,1,'2025-04-02',1),
-	 (1214,1,1,'2025-04-09',1),
-	 (1215,1,1,'2025-04-16',1),
-	 (1216,1,1,'2025-04-23',1),
-	 (1217,1,1,'2025-04-30',1),
-	 (1218,1,1,'2025-05-07',1),
-	 (1219,1,1,'2025-05-14',1),
-	 (1220,1,1,'2025-05-21',1),
-	 (1221,1,1,'2025-05-28',1),
-	 (1222,1,1,'2025-06-04',1),
-	 (1223,1,1,'2025-06-11',1),
-	 (1224,1,1,'2025-06-18',1),
-	 (1225,1,1,'2025-06-25',1),
-	 (1226,1,1,'2025-07-02',1),
-	 (1227,1,1,'2025-07-09',1),
-	 (1228,1,1,'2025-07-16',1),
-	 (1229,1,1,'2025-07-23',1),
-	 (1230,1,1,'2025-07-30',1);
+
 
 insert into plannings (planning_id,frequence_id,calendrier_id,jour,quantite) values
-	 (1231,1,1,'2025-08-06',1),
-	 (1232,1,1,'2025-08-13',1),
-	 (1233,1,1,'2025-08-20',1),
-	 (1234,1,1,'2025-08-27',1),
-	 (1235,1,1,'2025-09-03',1),
-	 (1236,1,1,'2025-09-10',1),
-	 (1237,1,1,'2025-09-17',1),
-	 (1238,1,1,'2025-09-24',1),
-	 (1239,1,1,'2025-10-01',1),
-	 (1240,1,1,'2025-10-08',1),
-	 (1241,1,1,'2025-10-15',1),
-	 (1242,1,1,'2025-10-22',1),
-	 (1243,1,1,'2025-10-29',1),
-	 (1244,1,1,'2025-11-05',1),
-	 (1245,1,1,'2025-11-12',1),
-	 (1246,1,1,'2025-11-19',1),
-	 (1247,1,1,'2025-11-26',1),
-	 (1248,1,1,'2025-12-03',1),
-	 (1249,1,1,'2025-12-10',1),
-	 (1250,1,1,'2025-12-17',1),
 	 (1251,3,1,'2025-01-09',0),
 	 (1252,3,1,'2025-01-16',0),
 	 (1253,3,1,'2025-01-23',0),
