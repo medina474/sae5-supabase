@@ -10,6 +10,7 @@ create table livraisons (
   jardin_id bigint not null,
   abonnement_id bigint not null, -- abonnement -> abonne
   distribution_id bigint not null, -- depot
+  produit_id bigint not null,
   qte numeric  not null default '1'::numeric,
   livre livraison not null default  'à livrer',
   planning_id bigint not null -- jour
@@ -19,7 +20,7 @@ create table livraisons_import (
   id_livraison bigint,
   semaine smallint,
   livre smallint,
-  qte smallint,
+  qte numeric,
   depot int,
   annee int,
   jour date,

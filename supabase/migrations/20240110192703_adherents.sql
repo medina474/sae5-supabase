@@ -27,6 +27,18 @@ for select
 to public
 using (true);
 
+-- profils
+
+create table profils (
+  profil_id bigint not null,
+  profil text
+);
+
+create table cotisations (
+  cotisation_id bigint not null,
+  profil_id bigint,
+  montant numeric
+);
 
 -- adhesions
 
