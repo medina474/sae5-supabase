@@ -1,15 +1,13 @@
-create view view_nb_adherents_par_jardin
-as select j.jardin_id,
-    j.jardin,
+create view stat_nb_adherents_par_jardin
+as select j.jardin_id, j.jardin,
     count(a.*) as nb_adherents
   from jardins j
     left join adherents a on a.jardin_id = j.jardin_id
   group by j.jardin_id;
 
-create view view_nb_depots_par_jardin
-as select j.jardin_id,
-    j.jardin,
-    count(d.*) as nb_depots
+create view stat_nb_depots_par_jardin
+as select j.jardin_id, j.jardin,
+  count(d.*) as nb_depots
   from jardins j
     left join depots d on d.jardin_id = j.jardin_id
   group by j.jardin_id;
@@ -55,6 +53,7 @@ as select c.calendrier_id,
     join saisons s on s.jardin_id = c.jardin_id and p.jour >= s.date_debut and p.jour <= s.date_fin
   group by c.calendrier_id, s.saison_id, s.saison;
 
+-- Vérifie que l'adhérent cotise bien au jardin dont il fait partie
 create view check_adherents_adhesions
 as select a.adherent_id,
     a.adherent
