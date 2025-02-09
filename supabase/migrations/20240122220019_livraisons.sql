@@ -58,10 +58,7 @@ alter table livraisons
   validate constraint livraisons_distribution_id_fkey;
 
 
---create view check_livraisons_feries as
---  select l.jour
---   from (livraisons l
---     join feries f on ((f.jour = l.jour)));
+
 
 alter table livraisons enable row level security;
 

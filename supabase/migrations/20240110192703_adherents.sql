@@ -3,6 +3,7 @@ create table adherents (
   created_at timestamp with time zone default now() not null,
   jardin_id bigint not null,
   adherent text not null,
+  profil_id bigint,
   depot_id bigint,
   email text,
   date_sortie date

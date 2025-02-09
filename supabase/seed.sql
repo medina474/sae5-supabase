@@ -1,10 +1,13 @@
 insert into jardins (jardin_id,jardin,tva) values
-(1,'Jardins de Cocagne Thaon les Vosges','FR42400245775');
+(1,'Jardins de Cocagne Thaon les Vosges','FR42400245775'),
+(2,'IUT de Saint Dié des Vosges',NULL);
 
 insert into contacts (contact_id,jardin_id,contact,telephone,email) values
-(1,1,'Christophine Séchion','0699880001',NULL);
+(1,1,'Christophine Séchion','0699880001','cs@gmail.com'),
+(2,2,'Emmanuel Medina','0688100873','emmanuel.medina@univ-lorraine.fr');
 
 update jardins set contact_id = 1 where jardin_id = 1;
+update jardins set contact_id = 2 where jardin_id = 2;
 
 insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation) values
 (1,1,'Prairie Claudel','88150','Thaon-les-Vosges','SRID=4326;POINT(6.427672 48.2531016)');
@@ -24,11 +27,14 @@ insert into cotisations (cotisation_id, profil_id, montant) values
 -- Calendrier général
 
 insert into saisons (saison_id,jardin_id,saison,date_debut,date_fin) values
-(1,1,'2025','2025-01-01','2025-12-31');
+(1,1,'2025','2025-01-01','2025-12-31'),
+(2,2,'2024-2025','2024-09-01','2025-06-30');
 
 insert into fermetures (fermeture_id,jardin_id,saison_id,semaine) values
 (1,1,1,1),
-(2,1,1,52);
+(2,1,1,52),
+(3,2,2,52),
+(4,2,2,1);
 
 insert into feries (ferie_id,jardin_id,ferie,jour) values
 (1,1,'Lundi de Pâques','2025-04-21'),
@@ -44,7 +50,6 @@ insert into feries (ferie_id,jardin_id,ferie,jour) values
 -- Dépôts
 
 insert into contacts (contact_id,jardin_id,contact,telephone,email) values
-(2,1,'Fursy Galriawla','0678283490',NULL),
 (3,1,'Iseline Triiwel','0755044134',NULL),
 (4,1,'Matthis Krütt','0685215584',NULL),
 (5,1,'Zeynep Soğan',NULL,NULL),
@@ -55,9 +60,11 @@ insert into contacts (contact_id,jardin_id,contact,telephone,email) values
 (10,1,'Denys Baklazhany',NULL,NULL),
 (11,1,'Fernanda Berenjena',NULL,NULL),
 (12,1,'Cristian Vânătă',NULL,NULL),
-(13,1,'Marjance Badmajan',NULL,NULL),
+(13,1,'Marjane Badmajan',NULL,NULL),
 (14,1,'Elyas Batenjal',NULL,NULL),
-(15,1,'Arlette Robert',NULL,NULL);
+(15,1,'Arlette Robert',NULL,NULL),
+(16,1,'Fursy Galriawla','0678283490',NULL),
+(17,1,'Louise Mesclun',NULL,NULL);
 
 insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation) values
 (2,1,'6 av. Salvador Allende','88000','Épinal','SRID=4326;POINT(6.4599403 48.1938105)'),
@@ -91,20 +98,18 @@ insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation
 
 insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation) values
 (25,1,'5 rue du Ruisseau','88150','Thaon les Vosges','SRID=4326;POINT(6.423976 48.208795)'),
-(26,1,'ZI Route Charles Pellerin','88190','Golbey','SRID=4326;POINT(6.423976 48.208795)');
-
-insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation) values
+(26,1,'ZI Route Charles Pellerin','88190','Golbey','SRID=4326;POINT(6.423976 48.208795)'),
 (27,1,'7 allée des Primevères','88390','Les Forges','SRID=4326;POINT(6.397633 48.171791)'),
 (14,1,'12 rue  Raymond Poincaré','88000','Épinal','SRID=4326;POINT(6.449693 48.175374)'),
 (28,1,'4 place Christian Poncelet','88200','Remiremont','SRID=4326;POINT(6.592068 48.015964)'),
 (29,1,'8 quai Barbier','88000','Épinal','SRID=4326;POINT(6.445190 48.171198)'),
 (30,1,'allée des Érables','88000','Épinal','SRID=4326;POINT(6.454908 48.203990)'),
-(31,1,'7 rue du Boudiou ','88000','Épinal','SRID=4326;POINT(6.447245 48.174228)'),
-(32,1,'2 rue des Amériques ','88190','Golbey','SRID=4326;POINT(6.428831 48.200150)'),
-(33,1,'2 rue des Amériques ','88190','Golbey','SRID=4326;POINT(6.452073 48.171806)');
+(31,1,'7 rue du Boudiou','88000','Épinal','SRID=4326;POINT(6.447245 48.174228)'),
+(32,1,'2 rue des Amériques','88190','Golbey','SRID=4326;POINT(6.428831 48.200150)'),
+(33,1,'9 rue de la Louvière','88000','Épinal','SRID=4326;POINT(6.452073 48.171806)');
 
 insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
-(1,1,'Jardins de Cocagne',1,2,100),
+(1,1,'Jardins de Cocagne',1,NULL,100),
 (3,1,'Église Saint Antoine',3,4,60),
 (4,1,'Ligue de l’enseignement',4,5,40),
 (5,1,'APF - Local extérieur – ESAT',5,NULL,20),
@@ -124,12 +129,10 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 (19,1,'Le Tholy',19,NULL,20),
 (99,1,'Livraison à domicile',1,NULL,100),
 (20,1,'Maison de l’Étudiant',20,10,20),
-(21,1,'Secours Catholique',21,NULL,20),
+(21,1,'Secours Catholique',21,17,20),
 (22,1,'Résidence du Monsey',22,NULL,20),
 (23,1,'Charmes',23,NULL,20),
-(24,1,'Complexe Sportif',24,NULL,40);
-
-insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
+(24,1,'Complexe Sportif',24,NULL,40),
 (25,1,'Moustaches Bikes',25,NULL,20),
 (26,1,'Papeterie Norske Skog',26,NULL,20),
 (27,1,'Les Forges',27,NULL,20),
@@ -139,7 +142,7 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 (31,1,'Crédit Agricole',30,NULL,20),
 (32,1,'Biocoop',31,NULL,20),
 (33,1,'Fives',32,NULL,20),
-(34,1,'Asso Etudiant Universitaire',33,NULL,20);
+(34,1,'Asso Étudiant Universitaire',33,NULL,20);
 
 -- Calendriers
 

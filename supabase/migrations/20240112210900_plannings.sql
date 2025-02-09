@@ -16,17 +16,4 @@ alter table only plannings
   add constraint plannings_pkey
   primary key (planning_id);
 
--- Vérifie qu'un jour n'est pas planifié pendant un jour férié
-create view check_plannings_feries as
-  select p.jour
-  from (plannings p
-    join feries f on ((f.jour = p.jour)));
 
--- Vérifie qu'un jour n'est pas planifié pendant une semaine de fermeture.
-create view check_plannings_semaine as
-  select p.planning_id, p.jour, s.saison from plannings p
-  join saisons s on p.jour between s.date_debut and s.date_fin
-  where
-    date_part ('week', p.jour) in (
-      select semaine from fermetures where fermetures.saison_id = s.saison_id
-    );
