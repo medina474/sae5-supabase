@@ -1,9 +1,4 @@
-create view stat_adherents as
-select j.jardin_id, j.jardin,
-    count(a.*) as nb_adherents
-  from jardins j
-    left join adherents a on a.jardin_id = j.jardin_id
-  group by j.jardin_id;
+
 
 create view stat_adherents_profils as
 select j.jardin_id, j.jardin, p.profil, 
@@ -21,21 +16,13 @@ select j.jardin_id, j.jardin,
   group by j.jardin_id;
 
 
-create view stat_abonnements as
-select saison_id, count(*) 
-  from abonnements
-  group by saison_id;
 
-create view stat_abonnements_paniers as
-select saison_id, p.panier, count(quantite) 
-  from abonnements a
-    join paniers p on p.panier_id = a.panier_id
-  group by a.saison_id, p.panier;
 
 create view stat_adherents_abonnements as
-select count(distinct a.adherent_id) 
+select a2.saison_id, count(distinct a.adherent_id) 
   from adherents a 
-    join abonnements a2 on a2.adherent_id = a.adherent_id;
+    join abonnements a2 on a2.adherent_id = a.adherent_id
+  group by a2.saison_id;
 
 create view stat_livraisons_produits as 
 select p.produit, count(qte) 

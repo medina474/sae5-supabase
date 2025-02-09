@@ -10,9 +10,11 @@ update jardins set contact_id = 1 where jardin_id = 1;
 update jardins set contact_id = 2 where jardin_id = 2;
 
 insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation) values
-(1,1,'Prairie Claudel','88150','Thaon-les-Vosges','SRID=4326;POINT(6.427672 48.2531016)');
+(1,1,'Prairie Claudel','88150','Thaon-les-Vosges','SRID=4326;POINT(6.427672 48.2531016)'),
+(34,2,'11 rue de l''Université','88100','Saint Dié des Vosges','SRID=4326;POINT(6.942109 48.289973)');
 
 update jardins set adresse_id = 1 where jardin_id = 1;
+update jardins set adresse_id = 34 where jardin_id = 2;
 
 insert into profils (profil_id, profil) values 
 (1, 'adhérent'),
@@ -64,7 +66,11 @@ insert into contacts (contact_id,jardin_id,contact,telephone,email) values
 (14,1,'Elyas Batenjal',NULL,NULL),
 (15,1,'Arlette Robert',NULL,NULL),
 (16,1,'Fursy Galriawla','0678283490',NULL),
-(17,1,'Louise Mesclun',NULL,NULL);
+(17,1,'Louise Mesclun',NULL,NULL),
+(18,1,'Albert Potager',NULL,NULL),
+(19,1,'Francine Verger',NULL,NULL),
+(20,1,'Hugo Bosquet',NULL,NULL),
+(21,1,'Léa Rosier',NULL,NULL);
 
 insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation) values
 (2,1,'6 av. Salvador Allende','88000','Épinal','SRID=4326;POINT(6.4599403 48.1938105)'),
@@ -126,7 +132,7 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 (16,1,'Point Vert Mafra',16,13,20),
 (17,1,'Brico Marché',17,14,20),
 (18,1,'Pro & Cie',18,NULL,40),
-(19,1,'Le Tholy',19,NULL,20),
+(19,1,'Le Tholy',19,21,20),
 (99,1,'Livraison à domicile',1,NULL,100),
 (20,1,'Maison de l’Étudiant',20,10,20),
 (21,1,'Secours Catholique',21,17,20),
@@ -135,9 +141,9 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 (24,1,'Complexe Sportif',24,NULL,40),
 (25,1,'Moustaches Bikes',25,NULL,20),
 (26,1,'Papeterie Norske Skog',26,NULL,20),
-(27,1,'Les Forges',27,NULL,20),
+(27,1,'Les Forges',27,18,20),
 (28,1,'Maison de l''Environnement',14,NULL,20),
-(29,1,'Vosgelis Remiremont',28,NULL,20),
+(29,1,'Vosgelis Remiremont',28,19,20),
 (30,1,'Vosgelis',29,NULL,20),
 (31,1,'Crédit Agricole',30,NULL,20),
 (32,1,'Biocoop',31,NULL,20),
