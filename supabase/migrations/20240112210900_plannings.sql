@@ -13,7 +13,6 @@ alter table only plannings
   foreign key (calendrier_id) references calendriers(calendrier_id);
 
 alter table only plannings
-  add constraint plannings_pkey
-  primary key (planning_id);
+  add primary key (planning_id);
 
 
