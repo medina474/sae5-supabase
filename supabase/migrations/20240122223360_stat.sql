@@ -22,13 +22,15 @@ select j.jardin_id, j.jardin,
 
 
 create view stat_abonnements as
-select count(*) from abonnements;
+select saison_id, count(*) 
+  from abonnements
+  group by saison_id;
 
 create view stat_abonnements_paniers as
-select p.panier, count(quantite) 
+select saison_id, p.panier, count(quantite) 
   from abonnements a
     join paniers p on p.panier_id = a.panier_id
-  group by p.panier;
+  group by a.saison_id, p.panier;
 
 create view stat_adherents_abonnements as
 select count(distinct a.adherent_id) 
