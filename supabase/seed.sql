@@ -112,7 +112,18 @@ insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation
 (30,1,'allée des Érables','88000','Épinal','SRID=4326;POINT(6.454908 48.203990)'),
 (31,1,'7 rue du Boudiou','88000','Épinal','SRID=4326;POINT(6.447245 48.174228)'),
 (32,1,'2 rue des Amériques','88190','Golbey','SRID=4326;POINT(6.428831 48.200150)'),
-(33,1,'9 rue de la Louvière','88000','Épinal','SRID=4326;POINT(6.452073 48.171806)');
+(33,1,'9 rue de la Louvière','88000','Épinal','SRID=4326;POINT(6.452073 48.171806)'),
+(35,1,'26 quai des Bons Enfants','88000','Épinal','0101000000370B6AAE89C31940D4E649E361164840'),
+(36,1,'29 rue François de Neufchâteau','88000','Épinal','01010000009C679192C3C419406C5F402FDC164840'),
+(37,1,'8 rue de la Préfecture','88000','Épinal','01010000000046860B2FC719400DA3C5BE09164840'),
+(38,1,'15 rue des Jardiniers','88000','Épinal','01010000007FDDE9CE13CF1940DA6F928BD6154840'),
+(39,1,'22 rue de la Moselle','88190','Golbey','0101000000440B1A44B5C21940C029070EC3184840'),
+(40,1,'22 pl. d''Avrinsart','88000','Épinal','010100000090BFB4A84FD2194005977D0D77174840'),
+(41,1,'16 Qur de la Magdeleine','88000','Épinal','0101000000FE37407AD4C11940575EF23FF9174840'),
+(42,1,'1 Rue de la Préfecture','88000','Épinal','0101000000EC51B81E85CB1940384BC97212164840'),
+(43,1,'45 boulevard d''Alsace','88400','Gérardmer','0101000000CD00BCAA58811B40D18F2B9A73094840'),
+(44,1,'18 Rue des Chaseaux','88200','Remiremont','0101000000138255F5F25B1A40829CE6D319024840');
+
 
 insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
 (1,1,'Jardins de Cocagne',1,NULL,100),
@@ -133,7 +144,7 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 (17,1,'Brico Marché',17,14,20),
 (18,1,'Pro & Cie',18,NULL,40),
 (19,1,'Le Tholy',19,21,20),
-(99,1,'Livraison à domicile',1,NULL,100),
+(99,1,'Livraison à domicile',NULL,NULL,100),
 (20,1,'Maison de l’Étudiant',20,10,20),
 (21,1,'Secours Catholique',21,17,20),
 (22,1,'Résidence du Monsey',22,NULL,20),

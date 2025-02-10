@@ -10,10 +10,12 @@ as select c.calendrier_id,
   group by c.calendrier_id, s.saison_id, s.saison;
 
 create view detail_tournees
-as select t.tournee_id, t.tournee, d.distribution_id, d2.depot, d.ordre 
+as select t.tournee_id, t.tournee, d.distribution_id, d2.depot, d.ordre, 
+  a.adresse, a.codepostal, a.ville, a.localisation
   from tournees t
     join distributions d on d.tournee_id = t.tournee_id
     join depots d2 on d2.depot_id = d.depot_id 
+    join adresses a on a.adresse_id = d2.adresse_id
   order by t.ordre, d.ordre;
 
 create view gpao_tournees

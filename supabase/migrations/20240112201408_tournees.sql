@@ -67,6 +67,7 @@ create table distributions (
   jardin_id bigint not null,
   tournee_id bigint not null,
   depot_id bigint not null,
+  adherent_id bigint,
   ordre smallint
 );
 

@@ -33,8 +33,11 @@ create table adherents (
   profil_id bigint,
   depot_id bigint,
   email text,
-  date_sortie date
+  date_sortie date,
+  adresse_id bigint
 );
+
+comment on column adherents.depot_id is 'Dépôt préféré.';
 
 alter table adherents 
   alter column adherent_id 
@@ -44,12 +47,10 @@ alter table only adherents
   add primary key (adherent_id);
 
 alter table only adherents
-  add constraint adherents_jardin_id_fkey 
-  foreign key (jardin_id) references jardins(jardin_id);
+  add foreign key (jardin_id) references jardins(jardin_id);
 
---alter table only adherents
---  add constraint adherents_jardin_id_fkey 
---  foreign key (profil_id) references profils;
+alter table only adherents
+  add foreign key (profil_id) references profils;
 
 alter table adherents enable row level security;
 
@@ -81,12 +82,10 @@ alter table only adhesions
   add primary key (adhesion_id);
 
 alter table only adhesions
-  add constraint adhesions_adherent_id_fkey
-  foreign key (adherent_id) references adherents(adherent_id);
+  add foreign key (adherent_id) references adherents(adherent_id);
 
 alter table only adhesions
-  add constraint adhesions_jardin_id_fkey
-  foreign key (jardin_id) references jardins(jardin_id);
+  add foreign key (jardin_id) references jardins(jardin_id);
 
 alter table only adhesions
   add constraint adhesions_un
