@@ -122,8 +122,24 @@ insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation
 (41,1,'16 Qur de la Magdeleine','88000','Épinal','0101000000FE37407AD4C11940575EF23FF9174840'),
 (42,1,'1 Rue de la Préfecture','88000','Épinal','0101000000EC51B81E85CB1940384BC97212164840'),
 (43,1,'45 boulevard d''Alsace','88400','Gérardmer','0101000000CD00BCAA58811B40D18F2B9A73094840'),
-(44,1,'18 Rue des Chaseaux','88200','Remiremont','0101000000138255F5F25B1A40829CE6D319024840');
-
+(44,1,'18 Rue des Chaseaux','88200','Remiremont','0101000000138255F5F25B1A40829CE6D319024840'),
+(45,1,'15 Av. du Maréchal de Lattre de Tassigny','88000','Épinal','SRID=4326;POINT(6.443127 48.177728)'),
+(46,1,'6 Quai des Bons Enfants','88000','Épinal', 'SRID=4326;POINT(6.445643 48.175605)'),
+(47,1,'4 Pl. du Général de Gaulle','88000','Épinal', 'SRID=4326;POINT(6.442305 48.178180)'),
+(48,1,'12 rue du Struthof','88000','Épinal','SRID=4326;POINT(6.456332 48.153667)'),
+(49,1,'12 rue Julien Ruellet','88000','Saint Laurent', 'SRID=4326;POINT(6.458201 48.148279)'),
+(50,1,'21 rue Jacques Brel','88190','Golbey','SRID=4326;POINT(6.423633 48.198616)'),
+(51,1,'1 route de Mazeley','88150','Oncourt','SRID=4326;POINT(6.377770 48.251139)'),
+(52,1,'5 rue du Haut du Camp','88440','Nomexy','SRID=4326;POINT(6.380297 48.307381)'),
+(53,1,'10 rue du docteur Sayer','88330','Châtel','SRID=4326;POINT(6.390317 48.315380)'),
+(54,1,'21 rue du Saint Oger','88000','Deyvillers','SRID=4326;POINT(6.513466 48.203747)'),
+(55,1,'rue des Forts','88390','Uxegney','SRID=4326;POINT(6.381738 48.198477)'),
+(56,1,'rue du Haut du Butté','88440','Frizon','SRID=4326;POINT(6.362618 48.284125)'),
+(57,1,'Allée des alouettes','88150','Girmont','SRID=4326;POINT(6.443350 48.259520)'),
+(58,1,'3 rue du Haut des Étages','88000','Épinal','SRID=4326;POINT(6.454961 48.185961)'),
+(59,1,'56 chemin du Moulin','88000','Épinal','SRID=4326;POINT(6.475722 48.179868)'),
+(60,1,'43 rue du Centre','88200','Saint Nabord','SRID=4326;POINT(6.583557 48.051127)'),
+(61,1,'19 rue de la Moselotte','88200','Saint Étienne les Remiremont','SRID=4326;POINT(6.613694 48.020207)');
 
 insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
 (1,1,'Jardins de Cocagne',1,NULL,100),

@@ -66,7 +66,7 @@ create table distributions (
   distribution_id bigint not null,
   jardin_id bigint not null,
   tournee_id bigint not null,
-  depot_id bigint not null,
+  depot_id bigint,
   adherent_id bigint,
   ordre smallint
 );
@@ -78,24 +78,23 @@ alter table distributions
 alter table only distributions
   add primary key (distribution_id);
 
+alter table distributions
+  add foreign key (depot_id) references depots not valid;
 
 alter table distributions
-  add constraint distributions_depot_id_fkey
-  foreign key (depot_id) references depots(depot_id) not valid;
+  add foreign key (adherent_id) references adherents not valid;
 
 alter table distributions
   validate constraint distributions_depot_id_fkey;
 
 alter table distributions
-  add constraint distributions_jardin_id_fkey
-  foreign key (jardin_id) references jardins(jardin_id) on update cascade not valid;
+  add foreign key (jardin_id) references jardins on update cascade not valid;
 
 alter table distributions
   validate constraint distributions_jardin_id_fkey;
 
 alter table distributions
-  add constraint distributions_tournee_id_fkey
-  foreign key (tournee_id) references tournees(tournee_id) not valid;
+  add foreign key (tournee_id) references tournees(tournee_id) not valid;
 
 alter table distributions
   validate constraint distributions_tournee_id_fkey;

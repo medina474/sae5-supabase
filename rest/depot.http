@@ -6,3 +6,15 @@ apikey: {{$dotenv APIKEY}}
 ###
 GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/view_depots_details?depot_id=eq.65&jardin_id=eq.2
 apikey: {{$dotenv APIKEY}}
+
+
+https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFqbmllenRwd253cm9pbnFyb2xtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc4MTEwNTAsImV4cCI6MjA1MzM4NzA1MH0.orLZFmX3i_qR0H4H6WwhUilNf5a1EAfrFhbbeRvN41M
+
+###
+GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/detail_livraisons?semaine=eq.9&select=tournee_id,tournee,produit,qte.sum()
+apikey: {{$dotenv APIKEY}}
+
+
+###
+GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/detail_livraisons?semaine=eq.9&depot_id=eq.99&select=adherent_id,adresse_id
+apikey: {{$dotenv APIKEY}}
