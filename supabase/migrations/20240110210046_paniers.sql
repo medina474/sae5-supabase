@@ -13,8 +13,7 @@ alter table only produits
   add primary key (produit_id);
 
 alter table only produits
-  add constraint produits_jardin_id_fkey
-  foreign key (jardin_id) references jardins(jardin_id);
+  add foreign key (jardin_id) references jardins(jardin_id);
 
 alter table produits enable row level security;
 
@@ -45,12 +44,10 @@ alter table only paniers
   add primary key (panier_id);
 
 alter table only paniers
-  add constraint paniers_produit_id_fkey
-  foreign key (produit_id) references produits(produit_id);
+  add foreign key (produit_id) references produits;
 
 alter table paniers
-  add constraint paniers_frequence_id_fkey
-  foreign key (frequence_id) references frequences(frequence_id) not valid;
+  add foreign key (frequence_id) references frequences not valid;
 
 alter table paniers
   validate constraint paniers_frequence_id_fkey;

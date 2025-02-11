@@ -15,18 +15,15 @@ alter table only depots
   add primary key (depot_id);
 
 alter table only depots
-  add constraint depots_jardin_id_fkey
-  foreign key (jardin_id) references jardins(jardin_id) on delete cascade;
+  add foreign key (jardin_id) references jardins on delete cascade;
 
 alter table depots
-  add constraint depots_adresse_id_fkey
-  foreign key (adresse_id) references adresses(adresse_id) not valid;
+  add foreign key (adresse_id) references adresses not valid;
 
 alter table depots validate constraint depots_adresse_id_fkey;
 
 alter table depots
-  add constraint depots_contact_id_fkey
-  foreign key (contact_id) references contacts(contact_id) not valid;
+  add foreign key (contact_id) references contacts not valid;
 
 alter table depots validate constraint depots_contact_id_fkey;
 

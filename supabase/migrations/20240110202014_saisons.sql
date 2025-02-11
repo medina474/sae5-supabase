@@ -15,8 +15,7 @@ alter table only saisons
   add primary key (saison_id);
 
 alter table only saisons
-  add constraint saisons_jardin_id_fkey
-  foreign key (jardin_id) references jardins(jardin_id) on delete cascade;
+  add foreign key (jardin_id) references jardins(jardin_id) on delete cascade;
 
 alter table saisons enable row level security;
 

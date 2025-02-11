@@ -51,15 +51,13 @@ alter table only adresses
   add primary key (adresse_id);
 
 alter table adresses
-  add constraint adresses_jardin_id_fkey
-  foreign key (jardin_id) references jardins(jardin_id) not valid;
+  add foreign key (jardin_id) references jardins not valid;
 
 alter table adresses
   validate constraint adresses_jardin_id_fkey;
 
 alter table jardins
-  add constraint jardins_adresse_id_fkey
-  foreign key (adresse_id) references adresses(adresse_id) on delete set null not valid;
+  add foreign key (adresse_id) references adresses on delete set null not valid;
 
 alter table jardins
   validate constraint jardins_adresse_id_fkey;
@@ -93,15 +91,13 @@ alter table only contacts
   add primary key (contact_id);
 
 alter table contacts
-  add constraint contacts_jardin_id_fkey
-  foreign key (jardin_id) references jardins(jardin_id) not valid;
+  add foreign key (jardin_id) references jardins not valid;
 
 alter table contacts
   validate constraint contacts_jardin_id_fkey;
 
 alter table jardins
-  add constraint jardins_contact_id_fkey
-  foreign key (contact_id) references contacts(contact_id) on delete set null not valid;
+  add foreign key (contact_id) references contacts(contact_id) on delete set null not valid;
 
 alter table jardins
   validate constraint jardins_contact_id_fkey;

@@ -1,6 +1,6 @@
 
 ###
-GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/depots?depot_id=eq.65
+GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/detail_depots
 apikey: {{$dotenv APIKEY}}
 
 ###
@@ -17,4 +17,9 @@ apikey: {{$dotenv APIKEY}}
 
 ###
 GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/detail_livraisons?semaine=eq.9&depot_id=eq.99&select=adherent_id,adresse_id
+apikey: {{$dotenv APIKEY}}
+
+
+### quantité de paniers à livrer semaine 9 par tournée
+GET https://qjnieztpwnwroinqrolm.supabase.co/rest/v1/detail_livraisons?semaine=eq.9&tournee_id=eq.7&select=depot_id,depot,qte.sum(),adresses(adresse,codepostal,ville,localisation)
 apikey: {{$dotenv APIKEY}}

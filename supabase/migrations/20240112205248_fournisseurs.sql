@@ -14,16 +14,13 @@ alter table only fournisseurs
   add primary key (fournisseur_id);
 
 alter table only fournisseurs
-  add constraint fournisseurs_jardin_id_fkey
-  foreign key (jardin_id) references jardins(jardin_id) on delete cascade;
+  add foreign key (jardin_id) references jardins on delete cascade;
 
 alter table fournisseurs
-  add constraint fournisseurs_adresse_id_fkey
-  foreign key (adresse_id) references adresses(adresse_id) on delete set null not valid;
+  add foreign key (adresse_id) references adresses on delete set null not valid;
 
 alter table fournisseurs
   validate constraint fournisseurs_adresse_id_fkey;
-
 
 alter table fournisseurs enable row level security;
 

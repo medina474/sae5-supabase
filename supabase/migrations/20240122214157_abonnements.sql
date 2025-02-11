@@ -18,9 +18,7 @@ alter table abonnements
   add primary key (abonnement_id);
 
 alter table abonnements
-  add constraint abonnements_adherent_id_fkey
-  foreign key (adherent_id) references adherents(adherent_id) on delete cascade not valid;
+  add foreign key (adherent_id) references adherents on delete cascade not valid;
 
 alter table abonnements
-  add constraint abonnements_panier_id_fkey
-  foreign key (panier_id) references paniers(panier_id);
+  add foreign key (panier_id) references paniers;
