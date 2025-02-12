@@ -22,7 +22,7 @@ insert into profils (profil_id, profil) values
 (3, 'étudiant'),
 (4, 'professionnel');
 
-insert into cotisations (cotisation_id, saison_idc, profil_id, montant) values 
+insert into cotisations (cotisation_id, saison_id, profil_id, montant) values 
 (1, 1, 1, 25.0),
 (2, 1, 2, 0.0),
 (3, 1, 3, 5.0),
