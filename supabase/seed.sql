@@ -19,12 +19,14 @@ update jardins set adresse_id = 34 where jardin_id = 2;
 insert into profils (profil_id, profil) values 
 (1, 'adhérent'),
 (2, 'employé'),
-(3, 'étudiant');
+(3, 'étudiant'),
+(4, 'professionnel');
 
-insert into cotisations (cotisation_id, profil_id, montant) values 
-(1, 1, 25),
-(2, 2, 0),
-(3, 3, 5);
+insert into cotisations (cotisation_id, saison_idc, profil_id, montant) values 
+(1, 1, 1, 25.0),
+(2, 1, 2, 0.0),
+(3, 1, 3, 5.0),
+(4, 1, 4, 250.0);
 
 -- Calendrier général
 
@@ -192,14 +194,14 @@ insert into frequences (frequence_id,jardin_id,frequence) values
 
 -- Produits
 
-insert into produits (produit_id,jardin_id,produit) values
-(1,1,'Panier simple'),
-(2,1,'Panier familial'),
-(3,1,'Panier fruité 1'),
-(4,1,'Panier fruité 2'),
-(5,1,'Panier fruité 3'),
-(6,1,'Oeufs x6'),
-(7,1,'Panier fruité 4');
+insert into produits (produit_id,jardin_id,produit,prix,marge) values
+(1,1,'Panier simple',13.80,40.0),
+(2,1,'Panier familial',23.70,40.0),
+(3,1,'Panier fruité 1',14.00,70.0),
+(4,1,'Panier fruité 2',17.00,70.0),
+(5,1,'Panier fruité 3',23.00,70.0),
+(6,1,'Oeufs x6',3.20,50.0),
+(7,1,'Panier entreprise',25.00,70.0);
 
 insert into paniers (panier_id,produit_id,panier,frequence_id,quantite,prix) values
 (1,1,'Panier simple hebdomadaire',1,50,690.0),

@@ -14,6 +14,7 @@ alter table only profils
 
 create table cotisations (
   cotisation_id bigint not null,
+  saison_id bigint,
   profil_id bigint,
   montant numeric
 );

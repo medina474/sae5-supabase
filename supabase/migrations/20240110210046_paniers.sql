@@ -2,7 +2,9 @@
 create table produits (
     produit_id bigint not null,
     jardin_id bigint not null,
-    produit text not null
+    produit text not null,
+    prix numeric,
+    marge numeric
 );
 
 alter table produits 
