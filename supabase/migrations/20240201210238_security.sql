@@ -70,3 +70,52 @@ as permissive
 for select
 to public
 using (true);
+
+
+alter table cotisations enable row level security;
+
+create policy "Lecture publique"
+on cotisations
+as permissive
+for select
+to public
+using (true);
+
+
+alter table profils enable row level security;
+
+create policy "Lecture publique"
+on profils
+as permissive
+for select
+to public
+using (true);
+
+
+alter table propositions enable row level security;
+
+create policy "Lecture publique"
+on propositions
+as permissive
+for select
+to public
+using (true);
+
+
+alter table stocks enable row level security;
+
+create policy "Lecture publique"
+on stocks
+as permissive
+for select
+to public
+using (true);
+
+alter table livraisons_import enable row level security;
+
+create policy "Lecture publique"
+on livraisons_import
+as permissive
+for select
+to public
+using (true);
