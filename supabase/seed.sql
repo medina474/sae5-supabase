@@ -141,7 +141,10 @@ insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation
 (58,1,'3 rue du Haut des Étages','88000','Épinal','SRID=4326;POINT(6.454961 48.185961)'),
 (59,1,'56 chemin du Moulin','88000','Épinal','SRID=4326;POINT(6.475722 48.179868)'),
 (60,1,'43 rue du Centre','88200','Saint Nabord','SRID=4326;POINT(6.583557 48.051127)'),
-(61,1,'19 rue de la Moselotte','88200','Saint Étienne les Remiremont','SRID=4326;POINT(6.613694 48.020207)');
+(61,1,'19 rue de la Moselotte','88200','Saint Étienne les Remiremont','SRID=4326;POINT(6.613694 48.020207)'),
+(62,1,'5 av. de Provence','88000','Épinal','SRID=4326;POINT(6.4487861 48.1690093)'),
+(63,1,'5 rue du Chapitre','88000','Épinal','SRID=4326;POINT(6.4511496 48.1736396)');
+
 
 insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
 (1,1,'Jardins de Cocagne',1,NULL,100),
