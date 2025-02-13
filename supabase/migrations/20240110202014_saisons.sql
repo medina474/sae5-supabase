@@ -15,7 +15,7 @@ alter table only saisons
   add primary key (saison_id);
 
 alter table only saisons
-  add foreign key (jardin_id) references jardins(jardin_id) on delete cascade;
+  add foreign key (jardin_id) references jardins on delete cascade;
 
 alter table saisons enable row level security;
 
@@ -26,7 +26,9 @@ for select
 to public
 using (true);
 
-
+alter table only cotisations
+  add foreign key (saison_id) references saisons;
+  
 -- frequences
 
 create table frequences (

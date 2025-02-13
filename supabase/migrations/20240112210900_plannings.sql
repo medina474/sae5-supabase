@@ -14,4 +14,5 @@ alter table only plannings
 alter table only plannings
   add primary key (planning_id);
 
-
+alter table only propositions
+  add foreign key (planning_id) references plannings;

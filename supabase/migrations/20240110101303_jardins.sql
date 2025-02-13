@@ -97,7 +97,7 @@ alter table contacts
   validate constraint contacts_jardin_id_fkey;
 
 alter table jardins
-  add foreign key (contact_id) references contacts(contact_id) on delete set null not valid;
+  add foreign key (contact_id) references contacts on delete set null not valid;
 
 alter table jardins
   validate constraint jardins_contact_id_fkey;

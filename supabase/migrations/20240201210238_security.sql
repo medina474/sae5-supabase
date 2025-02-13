@@ -104,11 +104,4 @@ using (true);
 
 
 
-alter table livraisons_import enable row level security;
 
-create policy "Lecture publique"
-on livraisons_import
-as permissive
-for select
-to public
-using (true);

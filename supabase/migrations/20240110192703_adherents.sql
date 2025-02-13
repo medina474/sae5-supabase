@@ -26,6 +26,9 @@ alter table cotisations
 alter table only cotisations
   add primary key (cotisation_id);
 
+alter table only cotisations
+  add foreign key (profil_id) references profils;
+
 create table adherents (
   adherent_id bigint not null,
   created_at timestamp with time zone default now() not null,
@@ -48,7 +51,7 @@ alter table only adherents
   add primary key (adherent_id);
 
 alter table only adherents
-  add foreign key (jardin_id) references jardins(jardin_id);
+  add foreign key (jardin_id) references jardins;
 
 alter table only adherents
   add foreign key (profil_id) references profils;
@@ -83,10 +86,10 @@ alter table only adhesions
   add primary key (adhesion_id);
 
 alter table only adhesions
-  add foreign key (adherent_id) references adherents(adherent_id);
+  add foreign key (adherent_id) references adherents;
 
 alter table only adhesions
-  add foreign key (jardin_id) references jardins(jardin_id);
+  add foreign key (jardin_id) references jardins;
 
 alter table only adhesions
   add constraint adhesions_un

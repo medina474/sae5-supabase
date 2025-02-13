@@ -13,7 +13,7 @@ alter table only fermetures
   add primary key (fermeture_id);
 
 alter table only fermetures
-  add constraint fermetures_jardin_id_fkey foreign key (jardin_id) references jardins(jardin_id) on delete cascade;
+  add foreign key (jardin_id) references jardins on delete cascade;
 
 alter table fermetures
   add constraint fermeture check (semaine <= 53);
@@ -45,7 +45,7 @@ alter table only feries
   add primary key (ferie_id);
 
 alter table only feries
-  add constraint feries_jardin_id_fkey foreign key (jardin_id) references jardins(jardin_id) on update cascade;
+  add foreign key (jardin_id) references jardins on update cascade;
 
 alter table feries enable row level security;
 

@@ -94,3 +94,7 @@ alter table distributions
 
 alter table distributions
   validate constraint distributions_tournee_id_fkey;
+
+alter table distributions
+  add constraint adresse_unique check ((depot_id is not null and adherent_id is null) OR (depot_id is null and adherent_id is not null))
+

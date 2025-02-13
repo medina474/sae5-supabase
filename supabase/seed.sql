@@ -22,12 +22,6 @@ insert into profils (profil_id, profil) values
 (3, 'étudiant'),
 (4, 'professionnel');
 
-insert into cotisations (cotisation_id, saison_id, profil_id, montant) values 
-(1, 1, 1, 25.0),
-(2, 1, 2, 0.0),
-(3, 1, 3, 5.0),
-(4, 1, 4, 250.0);
-
 -- Calendrier général
 
 insert into saisons (saison_id,jardin_id,saison,date_debut,date_fin) values
@@ -50,6 +44,12 @@ insert into feries (ferie_id,jardin_id,ferie,jour) values
 (7,1,'Assomption','2025-08-15'),
 (8,1,'Toussaint','2025-11-01'),
 (9,1,'Armistice 1918','2025-11-11');
+
+insert into cotisations (cotisation_id, saison_id, profil_id, montant) values 
+(1, 1, 1, 25.0),
+(2, 1, 2, 0.0),
+(3, 1, 3, 5.0),
+(4, 1, 4, 250.0);
 
 -- Dépôts
 
