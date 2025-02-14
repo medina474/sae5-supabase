@@ -66,7 +66,7 @@ insert into contacts (contact_id,jardin_id,contact,telephone,email) values
 (12,1,'Cristian Vânătă',NULL,NULL),
 (13,1,'Marjane Badmajan',NULL,NULL),
 (14,1,'Elyas Batenjal',NULL,NULL),
-(15,1,'Arlette Robert',NULL,NULL),
+(15,1,'Robert Jacquesriviere',NULL,NULL),
 (16,1,'Fursy Galriawla','0678283490',NULL),
 (17,1,'Louise Mesclun',NULL,NULL),
 (18,1,'Albert Potager',NULL,NULL),
@@ -143,8 +143,8 @@ insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation
 (60,1,'43 rue du Centre','88200','Saint Nabord','SRID=4326;POINT(6.583557 48.051127)'),
 (61,1,'19 rue de la Moselotte','88200','Saint Étienne les Remiremont','SRID=4326;POINT(6.613694 48.020207)'),
 (62,1,'5 av. de Provence','88000','Épinal','SRID=4326;POINT(6.4487861 48.1690093)'),
-(63,1,'5 rue du Chapitre','88000','Épinal','SRID=4326;POINT(6.4511496 48.1736396)');
-
+(63,1,'5 rue du Chapitre','88000','Épinal','SRID=4326;POINT(6.4511496 48.1736396)'),
+(64,1,'557 rue du Chêne','88220','Hadol','SRID=4326;POINT(6.484004 48.108499)');
 
 insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) values
 (1,1,'Jardins de Cocagne',1,NULL,100),
@@ -154,13 +154,13 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 (6,1,'Ecodenn’ergie',6,NULL,20),
 (7,1,'Botanic',7,6,20),
 (8,1,'Chambre d’Agriculture',8,7,20),
-(9,1,'Pharmacie Robert',9,15,20),
+(9,1,'Pharmacie Saint Nabord',9,15,20),
 (10,1,'Association GACI',10,11,80),
 (11,1,'Office du tourisme',11,12,20),
 (12,1,'Raon aux Bois',12,NULL,20),
 (13,1,'Docelles',13,NULL,20),
 (14,1,'Centre Léo Lagrange',2,8,60),
-(15,1,'3ème Rive Café Associatif',15,9,20),
+(15,1,'3e Rive (Café Associatif)',15,9,20),
 (16,1,'Point Vert Mafra',16,13,20),
 (17,1,'Brico Marché',17,14,20),
 (18,1,'Pro & Cie',18,NULL,40),
@@ -180,7 +180,8 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 (31,1,'Crédit Agricole',30,NULL,20),
 (32,1,'Biocoop',31,NULL,20),
 (33,1,'Fives',32,NULL,20),
-(34,1,'Asso Étudiant Universitaire',33,NULL,20);
+(34,1,'Asso Étudiant Universitaire',33,NULL,20),
+(35,1,'Hadol',64,NULL,20);
 
 -- Calendriers
 
