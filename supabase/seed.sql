@@ -219,7 +219,20 @@ insert into paniers (panier_id,produit_id,panier,frequence_id,quantite,prix) val
 (9,4,'Panier fruité 2',3,1,17.0),
 (10,5,'Panier fruité 3',3,1,23.0),
 (11,6,'Oeufs x6',3,1,3.05),
-(12,7,'Panier fruité 4',3,1,27.0);
+(12,7,'Panier fruité 4',3,1,23.5);
+
+insert into paniers (panier_id,produit_id,panier,frequence_id,quantite,prix) values
+(13,1,'Panier simple hebdomadaire à domicile',1,50,894.0),
+(14,1,'Panier simple 15 jours à domicile',2,25,497.0),
+(15,2,'Panier familial hebdomadaire à domicile',1,50,1447.0),
+(16,2,'Panier familial 15 jours à domicile',2,25,857.0);
+
+
+insert into paniers (panier_id,produit_id,panier,frequence_id,quantite,prix) values
+(17,1,'Panier simple soutien x12',1,12,196.0),
+(18,1,'Panier simple soutien x6',2,6,98.0),
+(19,2,'Panier familial soutien x12',1,12,318.0),
+(20,2,'Panier familial soutien x6',2,6,160.0);
 
 -- Production
 
