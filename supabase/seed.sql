@@ -56,7 +56,7 @@ insert into cotisations (cotisation_id, saison_id, profil_id, montant) values
 insert into contacts (contact_id,jardin_id,contact,telephone,email) values
 (3,1,'Iseline Triiwel','0755044134',NULL),
 (4,1,'Matthis Krütt','0685215584',NULL),
-(5,1,'Zeynep Soğan',NULL,NULL),
+(5,1,'Zeynep Soğan','0751346748',NULL),
 (6,1,'Maria Carciofo',NULL,NULL),
 (7,1,'Mustafa Patlıcan',NULL,NULL),
 (8,1,'Marco Melanzana',NULL,NULL),
@@ -72,7 +72,9 @@ insert into contacts (contact_id,jardin_id,contact,telephone,email) values
 (18,1,'Albert Potager',NULL,NULL),
 (19,1,'Francine Verger',NULL,NULL),
 (20,1,'Hugo Bosquet',NULL,NULL),
-(21,1,'Léa Rosier',NULL,NULL);
+(21,1,'Léa Rosier',NULL,NULL),
+(22,1,'Loubna Ben Allal',NULL,NULL),
+(23,1,'Tiera Guinn Fletcher',NULL,NULL);
 
 insert into adresses (adresse_id,jardin_id,adresse,codepostal,ville,localisation) values
 (2,1,'6 av. Salvador Allende','88000','Épinal','SRID=4326;POINT(6.4599403 48.1938105)'),
@@ -150,15 +152,15 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 (1,1,'Jardins de Cocagne',1,NULL,100),
 (3,1,'Église Saint Antoine',3,4,60),
 (4,1,'Ligue de l’enseignement',4,5,40),
-(5,1,'APF - Local extérieur – ESAT',5,NULL,20),
-(6,1,'Ecodenn’ergie',6,NULL,20),
+(5,1,'APF - Local extérieur – ESAT',5,23,20),
+(6,1,'Ecodenn’ergie',6,22,20),
 (7,1,'Botanic',7,6,20),
 (8,1,'Chambre d’Agriculture',8,7,20),
 (9,1,'Pharmacie Saint Nabord',9,15,20),
 (10,1,'Association GACI',10,11,80),
 (11,1,'Office du tourisme',11,12,20),
 (12,1,'Raon aux Bois',12,NULL,20),
-(13,1,'Docelles',13,NULL,20),
+(13,1,'Docelles',13,20,20),
 (14,1,'Centre Léo Lagrange',2,8,60),
 (15,1,'3e Rive (Café Associatif)',15,9,20),
 (16,1,'Point Vert Mafra',16,13,20),
@@ -168,7 +170,7 @@ insert into depots (depot_id,jardin_id,depot,adresse_id,contact_id,capacite) val
 (99,1,'Livraison à domicile',NULL,NULL,100),
 (20,1,'Maison de l’Étudiant',20,10,20),
 (21,1,'Secours Catholique',21,17,20),
-(22,1,'Résidence du Monsey',22,NULL,20),
+(22,1,'Résidence du Monsey',22,16,20),
 (23,1,'Charmes',23,NULL,20),
 (24,1,'Complexe Sportif',24,NULL,40),
 (25,1,'Moustaches Bikes',25,NULL,20),
